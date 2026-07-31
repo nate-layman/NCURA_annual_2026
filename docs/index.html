@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f1b300" />
+    <title>Demo Local Vandalizer! | NCURA Annual 2026</title>
+    <meta name="description" content="Wi-Fi credentials and example documents for the Vandalizer demo at NCURA Annual 2026." />
+    <style>
+      :root {
+        --ink: #191919;
+        --muted: #555;
+        --bg: #fafaf7;
+        --panel: #ffffff;
+        --accent: #f1b300;
+        --border: #e5e2d8;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.5;
+        min-height: 100vh;
+      }
+      main {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 3rem;
+      }
+      .brand {
+        text-align: center;
+        margin: 0 0 1.25rem;
+      }
+      .brand img {
+        width: min(440px, 80%);
+        height: auto;
+        display: inline-block;
+      }
+      h1 {
+        font-size: clamp(1.5rem, 4vw, 2.2rem);
+        margin: 0 0 2rem;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: var(--muted);
+        font-weight: 600;
+      }
+      section {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.75rem 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      h2 {
+        margin: 0 0 1rem;
+        font-size: 1.15rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+      }
+      .wifi-row {
+        display: flex;
+        gap: 1.75rem;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .wifi-qr {
+        flex: 0 0 220px;
+      }
+      .wifi-qr img {
+        width: 220px;
+        max-width: 100%;
+        border-radius: 10px;
+        display: block;
+      }
+      .wifi-creds {
+        flex: 1 1 240px;
+      }
+      .cred-line {
+        margin: 0 0 0.6rem;
+        font-size: 1.05rem;
+      }
+      .cred-label {
+        display: inline-block;
+        min-width: 5.5rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .cred-value {
+        font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+        font-size: 1.1rem;
+        font-weight: 600;
+        word-break: break-all;
+      }
+      .cta {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 700;
+        padding: 0.85rem 1.5rem;
+        border-radius: 10px;
+        font-size: 1.05rem;
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+      }
+      .cta:hover, .cta:focus-visible {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(241, 179, 0, 0.35);
+      }
+      .cta.secondary {
+        background: var(--ink);
+        color: #fff;
+      }
+      .cta.secondary:hover, .cta.secondary:focus-visible {
+        box-shadow: 0 6px 18px rgba(25, 25, 25, 0.25);
+      }
+      .cta-block {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+      }
+      .cta-note {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin: 0;
+      }
+      footer {
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand">
+        <img src="img/vandalizer.png" alt="Vandalizer" />
+      </div>
+      <h1>Demo Local Vandalizer!</h1>
+
+      <section aria-labelledby="wifi-heading">
+        <h2 id="wifi-heading">Conference Wi-Fi</h2>
+        <div class="wifi-row">
+          <div class="wifi-qr">
+            <img src="sparky_wifi.png" alt="Scan to join the sparky Wi-Fi network" />
+          </div>
+          <div class="wifi-creds">
+            <p class="cred-line"><span class="cred-label">Network</span><span class="cred-value">sparky</span></p>
+            <p class="cred-line"><span class="cred-label">Password</span><span class="cred-value">Q3HcMZJ3SE3NsXBQ</span></p>
+            <p class="cred-line"><span class="cred-label">Security</span><span class="cred-value">WPA</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="try-heading">
+        <h2 id="try-heading">Try it</h2>
+        <div class="cta-block">
+          <a class="cta" href="vandalizer-demo-docs.zip" download>Download example documents (.zip)</a>
+          <p class="cta-note">12 PDFs: NSF and NIH award notices, subaward, budget justification, research strategy, plus clean and tier-3 OCR pairs.</p>
+          <a class="cta secondary" href="https://vandalizer.uidaho.edu" target="_blank" rel="noopener" style="margin-top:0.6rem;">Open Vandalizer</a>
+          <p class="cta-note">Upload any PDF from the zip and try extraction, comparison, or evaluation.</p>
+        </div>
+      </section>
+
+      <footer>NCURA Annual 2026 &middot; AI4RA Vandalizer demo</footer>
+    </main>
+  </body>
+</html>
