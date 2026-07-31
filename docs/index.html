@@ -128,6 +128,15 @@
         font-size: 0.9rem;
         margin: 0;
       }
+      .hw-image {
+        display: block;
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        margin: 0 auto 1rem;
+        border-radius: 10px;
+        background: #000;
+      }
       footer {
         text-align: center;
         color: var(--muted);
@@ -164,6 +173,15 @@
           <p class="cta-note">12 PDFs: NSF and NIH award notices, subaward, budget justification, research strategy, plus clean and tier-3 OCR pairs.</p>
           <a class="cta secondary" href="https://vandalizer.uidaho.edu" target="_blank" rel="noopener" style="margin-top:0.6rem;">Open Vandalizer</a>
           <p class="cta-note">Upload any PDF from the zip and try extraction, comparison, or evaluation.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="hw-heading">
+        <h2 id="hw-heading">Hardware powering this demo</h2>
+        <img class="hw-image" src="img/dgx-spark.jpg" alt="NVIDIA DGX Spark desktop AI system" />
+        <div class="cta-block">
+          <p class="cta-note">Vandalizer is running locally on an NVIDIA DGX Spark &mdash; a desktop-class AI system built around the GB10 Grace Blackwell Superchip.</p>
+          <a class="cta secondary" href="https://mindrouter.ai/configurator.html" target="_blank" rel="noopener">Configure your own DGX Spark</a>
         </div>
       </section>
 
