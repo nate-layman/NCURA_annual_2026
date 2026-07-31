@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Read(//Users/nlayman/Documents/osp/granted/repos/vandalizer/backend/app/routers/**)",
-      "Read(//Users/nlayman/Documents/osp/granted/repos/vandalizer/frontend/src/pages/**)"
-    ]
-  }
-}
