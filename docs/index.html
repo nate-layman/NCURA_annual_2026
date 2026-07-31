@@ -220,6 +220,133 @@
         border-radius: 4px;
         font-size: 0.95em;
       }
+      button.cta {
+        font-family: inherit;
+        border: 0;
+        cursor: pointer;
+      }
+      dialog.docs-modal {
+        border: 0;
+        border-radius: 16px;
+        padding: 0;
+        max-width: min(760px, 92vw);
+        width: 100%;
+        max-height: 88vh;
+        background: var(--panel);
+        color: var(--ink);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
+      }
+      dialog.docs-modal::backdrop {
+        background: rgba(0, 0, 0, 0.55);
+      }
+      .modal-inner {
+        display: flex;
+        flex-direction: column;
+        max-height: 88vh;
+      }
+      .modal-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid var(--border);
+        gap: 1rem;
+      }
+      .modal-header h3 { margin: 0; font-size: 1.15rem; }
+      .modal-header .sub { margin: 0.15rem 0 0; font-size: 0.85rem; color: var(--muted); }
+      .modal-close {
+        background: transparent;
+        border: 0;
+        font-size: 1.6rem;
+        line-height: 1;
+        cursor: pointer;
+        color: var(--muted);
+        padding: 0.15rem 0.5rem;
+        border-radius: 6px;
+      }
+      .modal-close:hover, .modal-close:focus-visible {
+        background: #f2efe4;
+        color: var(--ink);
+      }
+      .modal-list {
+        overflow-y: auto;
+        padding: 0.25rem 1.25rem;
+      }
+      .doc-item {
+        padding: 0.9rem 0;
+        border-bottom: 1px solid var(--border);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.35rem 1rem;
+        align-items: start;
+      }
+      .doc-item:last-child { border-bottom: 0; }
+      .doc-title h4 { margin: 0; font-size: 1rem; }
+      .doc-file {
+        display: block;
+        margin-top: 0.15rem;
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+      }
+      .doc-what {
+        grid-column: 1 / -1;
+        margin: 0.2rem 0 0;
+        font-size: 0.9rem;
+        color: var(--ink);
+        line-height: 1.4;
+      }
+      .doc-workflow {
+        grid-column: 1 / -1;
+        margin: 0.2rem 0 0;
+        font-size: 0.88rem;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+      .doc-workflow strong { color: var(--ink); }
+      .pill {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--ink);
+        font-weight: 700;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 0.12rem 0.5rem;
+        border-radius: 999px;
+        margin-right: 0.35rem;
+        vertical-align: 1px;
+      }
+      .doc-download {
+        align-self: start;
+        background: var(--ink);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.85rem;
+        padding: 0.4rem 0.75rem;
+        border-radius: 8px;
+        white-space: nowrap;
+      }
+      .doc-download:hover, .doc-download:focus-visible {
+        box-shadow: 0 4px 12px rgba(25, 25, 25, 0.25);
+      }
+      .modal-footer {
+        padding: 0.85rem 1.25rem;
+        border-top: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        gap: 0.75rem;
+        background: #faf7ec;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .modal-footer .zip-note {
+        margin: 0;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
       .hw {
         background: var(--panel);
         border: 1px solid var(--border);
@@ -308,10 +435,10 @@
       <div class="steps-grid">
         <section class="step" aria-labelledby="step1-heading">
           <div class="step-num">1</div>
-          <h2 id="step1-heading">Download PDFs</h2>
+          <h2 id="step1-heading">Get example PDFs</h2>
           <div class="step-body">
-            <a class="cta" href="vandalizer-demo-docs.zip" download>Download .zip</a>
-            <p class="step-note">12 example PDFs: NSF/NIH awards, subaward, budgets, plus clean and tier-3 OCR pairs.</p>
+            <button class="cta" type="button" data-open-docs>Browse example documents</button>
+            <p class="step-note">6 PDFs: a grant NOFO, three NSF award notices, a budget justification, and a research strategy. See each file with a matching Vandalizer workflow.</p>
             <p class="callout"><strong>Do this first.</strong> You'll lose internet in step 2.</p>
           </div>
         </section>
@@ -353,6 +480,103 @@
           <a href="https://ai4ra.uidaho.edu" target="_blank" rel="noopener">AI4RA</a>
         </nav>
       </section>
+
+      <dialog id="docs-modal" class="docs-modal" aria-labelledby="docs-modal-title">
+        <div class="modal-inner">
+          <div class="modal-header">
+            <div>
+              <h3 id="docs-modal-title">Example documents</h3>
+              <p class="sub">Each PDF pairs with a workflow from Vandalizer's Library catalog.</p>
+            </div>
+            <button class="modal-close" type="button" aria-label="Close" data-close-docs>&times;</button>
+          </div>
+          <div class="modal-list">
+            <article class="doc-item">
+              <div class="doc-title">
+                <h4>NCOD Grant NOFO (FY 2026)</h4>
+                <span class="doc-file">NCOD_Grant_NOFO_2026.pdf &middot; 39 KB</span>
+              </div>
+              <a class="doc-download" href="documents/NCOD_Grant_NOFO_2026.pdf" download>Download</a>
+              <p class="doc-what">A synthetic Notice of Funding Opportunity from the "National Coalition of Donuts" for the Glazing the Future initiative. Includes program description, eligibility, review criteria, and application requirements.</p>
+              <p class="doc-workflow"><span class="pill">Pre-award</span> Try <strong>FOA Checklist (Pre-Award)</strong> or <strong>RFA (Working Complete Checklist)</strong> to pull evaluation criteria, dates, eligibility, and submission requirements into a single reference.</p>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-title">
+                <h4>NSF Award Notice: DEB-2412345</h4>
+                <span class="doc-file">nsf_award_notice_DEB-2412345.pdf &middot; 10 KB</span>
+              </div>
+              <a class="doc-download" href="documents/nsf_award_notice_DEB-2412345.pdf" download>Download</a>
+              <p class="doc-what">NSF Division of Environmental Biology continuing grant. $2.1M over four years. Includes recipient info, PI/co-PI, funding totals, and a full budget table.</p>
+              <p class="doc-workflow"><span class="pill">Post-award</span> Feed into <strong>Award Notice/Agreement Compliance Analysis</strong> for administrative and reporting requirements, or <strong>NOA Summary</strong> for a basic award &amp; financial summary.</p>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-title">
+                <h4>NSF Award Notice: EAR-2418901</h4>
+                <span class="doc-file">nsf_award_notice_EAR-2418901.pdf &middot; 10 KB</span>
+              </div>
+              <a class="doc-download" href="documents/nsf_award_notice_EAR-2418901.pdf" download>Download</a>
+              <p class="doc-what">NSF Earth Sciences continuing grant. $1.18M over four years. Single-PI project with a smaller budget than DEB but the same NSF award structure.</p>
+              <p class="doc-workflow"><span class="pill">Post-award</span> Same as the other NSF notices: <strong>Award Notice/Agreement Compliance Analysis</strong>, <strong>NOA Risk Analysis</strong>, or <strong>Prior Approval Requirements Tracking</strong>. Great for comparing outputs across three awards.</p>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-title">
+                <h4>NSF Award Notice: OPP-2345678</h4>
+                <span class="doc-file">nsf_award_notice_OPP-2345678.pdf &middot; 10 KB</span>
+              </div>
+              <a class="doc-download" href="documents/nsf_award_notice_OPP-2345678.pdf" download>Download</a>
+              <p class="doc-what">NSF Office of Polar Programs continuing grant. $1.65M over four years. Includes international travel and Other Personnel effort, useful for exercising personnel-heavy compliance checks.</p>
+              <p class="doc-workflow"><span class="pill">Post-award</span> Run <strong>Effort Reporting &amp; Time and Effort Compliance</strong> alongside <strong>Award Notice/Agreement Compliance Analysis</strong> to surface personnel and international-travel obligations.</p>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-title">
+                <h4>Budget Justification (FBU)</h4>
+                <span class="doc-file">fbu_budget_justification.pdf &middot; 28 KB</span>
+              </div>
+              <a class="doc-download" href="documents/fbu_budget_justification.pdf" download>Download</a>
+              <p class="doc-what">Three-year budget justification for a graduate student proposal (Frodo B. Underhill). Categories include personnel, fringe, travel, supplies, computing, tuition, and publication costs.</p>
+              <p class="doc-workflow"><span class="pill">Budget</span> The obvious pairing: <strong>Budget Analyzer</strong>. It pulls line items, checks arithmetic, and flags potentially disallowed costs.</p>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-title">
+                <h4>Research Strategy (FBU)</h4>
+                <span class="doc-file">fbu_research_strategy.pdf &middot; 5 KB</span>
+              </div>
+              <a class="doc-download" href="documents/fbu_research_strategy.pdf" download>Download</a>
+              <p class="doc-what">NIH-style research strategy narrative for the same applicant as the budget justification. Uses the Significance / Innovation / Approach / Aims structure.</p>
+              <p class="doc-workflow"><span class="pill">Pre-award</span> Pair with the NCOD NOFO and run <strong>Sponsor Compliance Checker</strong> to identify formatting violations, missing sections, and eligibility concerns.</p>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <p class="zip-note">Or grab everything in one file.</p>
+            <a class="cta" href="vandalizer-demo-docs.zip" download>Download all as .zip</a>
+          </div>
+        </div>
+      </dialog>
     </main>
+    <script>
+      (function () {
+        const modal = document.getElementById('docs-modal');
+        if (!modal) return;
+        document.querySelectorAll('[data-open-docs]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            if (typeof modal.showModal === 'function') modal.showModal();
+            else modal.setAttribute('open', '');
+          });
+        });
+        modal.querySelectorAll('[data-close-docs]').forEach(function (btn) {
+          btn.addEventListener('click', function () { modal.close(); });
+        });
+        modal.addEventListener('click', function (e) {
+          const rect = modal.getBoundingClientRect();
+          const inside = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
+          if (!inside) modal.close();
+        });
+      })();
+    </script>
   </body>
 </html>

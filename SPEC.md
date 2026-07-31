@@ -20,7 +20,7 @@ Single-page layout, top to bottom:
    - **Password:** `Q3HcMZJ3SE3NsXBQ`
    - **Security:** WPA
 3. **Vandalizer launch link/button** pointing to https://vandalizer.uidaho.edu.
-4. **Documents zip** - one prominent "Download example documents" button linking to `vandalizer-demo-docs.zip`. Note that the zip includes 12 PDFs (samples + OCR clean/tier-3 pairs).
+4. **Documents zip** - one prominent "Download example documents" button linking to `vandalizer-demo-docs.zip`. The zip includes 6 sample PDFs for testing Vandalizer workflows.
 
 ## Documents to include in the zip
 
@@ -32,14 +32,8 @@ From [documents/](documents/):
 - `nsf_award_notice_OPP-2345678.pdf`
 - `fbu_budget_justification.pdf`
 - `fbu_research_strategy.pdf`
-- `workshop_ocr/nsf_award_notice_OAC-2415678_clean.pdf`
-- `workshop_ocr/nsf_award_notice_OAC-2415678_tier3_authentic.pdf`
-- `workshop_ocr/nih_notice_of_award_1R01AI248002-01_clean.pdf`
-- `workshop_ocr/nih_notice_of_award_1R01AI248002-01_tier3_authentic.pdf`
-- `workshop_ocr/subaward_agreement_SUB-24-001_clean.pdf`
-- `workshop_ocr/subaward_agreement_SUB-24-001_tier3_authentic.pdf`
 
-Build with: `cd documents && zip -r ../vandalizer-demo-docs.zip .`
+Build with: `cd documents && zip ../docs/vandalizer-demo-docs.zip *.pdf`
 
 ## GitHub Pages setup
 
