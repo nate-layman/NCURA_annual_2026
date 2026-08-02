@@ -20,8 +20,21 @@
         <section class="title-slide">
           <p class="slide-kicker">NCURA Annual 2026 &middot; Concurrent Session</p>
           <h1>Foundational AI Literacy for Research Administrators</h1>
-          <p class="slide-lede">A practical foundation in AI for research administration: how it works, what it can do, where it falls short, and how to use it responsibly.</p>
-          <p style="margin-top:1rem; font-weight:700;">Nathan Layman &middot; AI4RA / University of Idaho</p>
+          <p class="title-presenter">Nathan C. Layman</p>
+          <p class="title-presenter-affil">Data Scientist</p>
+          <p class="title-presenter-affil">Office of Sponsored Programs</p>
+          <p class="title-presenter-affil">University of Idaho</p>
+          <div class="title-logo-row">
+            <a href="https://www.uidaho.edu/research" target="_blank" rel="noopener noreferrer" class="title-logo-link">
+              <img src="img/uidaho.png" alt="University of Idaho Office of Research" class="title-logo title-logo-lg" />
+            </a>
+            <a href="https://www.suu.edu/sparc/" target="_blank" rel="noopener noreferrer" class="title-logo-link">
+              <img src="img/suu.png" alt="Southern Utah University SPARC" class="title-logo title-logo-sm" />
+            </a>
+            <a href="https://ai4ra.uidaho.edu/" target="_blank" rel="noopener noreferrer" class="title-logo-link">
+              <img src="img/ai4ra.png" alt="AI4RA" class="title-logo title-logo-xl" />
+            </a>
+          </div>
         </section>
 
         <!-- 3. LITERACY QUOTE -->
@@ -32,9 +45,7 @@
             </div>
             <div class="split-text">
               <p class="slide-kicker">What "literacy" has always meant</p>
-              <p class="slide-quote">"Reading the world always precedes reading the word, and reading the word implies continually reading the world."</p>
-              <p class="slide-note">Paulo Freire, <em>Literacy: Reading the Word and the World</em> (1987).</p>
-              <p class="slide-quote" style="margin-top:1.2rem;">"The ability to understand, evaluate, use and engage with written texts to participate in society, to achieve one's goals, and to develop one's knowledge and potential."</p>
+              <p class="slide-quote">"The ability to understand, evaluate, use and engage with written texts to participate in society, to achieve one's goals, and to develop one's knowledge and potential."</p>
               <p class="slide-note">OECD PIAAC Literacy Framework.</p>
             </div>
           </div>
@@ -65,31 +76,62 @@
               <p class="slide-kicker">AI literacy</p>
               <h2>The same verbs, plus one.</h2>
               <p class="slide-quote">"AI literacy equips learners to understand how AI systems work, critically <strong>evaluate their outputs</strong>, and use them ethically and creatively."</p>
-              <p class="slide-note">OECD &amp; European Commission, <em>Empowering Learners for the Age of AI</em> (2025). Long &amp; Magerko (ACM CHI 2020) add the reframe: not just evaluate AI, but <strong>collaborate</strong> with it.</p>
+              <p class="slide-note"><a href="https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html" target="_blank" rel="noopener noreferrer">OECD &amp; European Commission (2025)</a></p>
             </div>
           </div>
         </section>
 
-        <!-- 10. FOUR REASONS -->
+        <!-- 8b. LITERACY VS USAGE (the distinction) -->
+        <section>
+          <p class="slide-kicker">Before we go further</p>
+          <h2>Being literate about AI is not the same as knowing how to use AI.</h2>
+          <p class="slide-lede">Anyone can learn to type into a chatbot and get an answer. That is usage. Understanding <em>why</em> the answer is what it is, <em>when</em> to trust it, and <em>where</em> it will fail is literacy, and it is a different skill.</p>
+          <div class="slide-grid tight" style="align-items: stretch; max-width: 52rem; margin: 0.6rem auto 0;">
+            <div class="slide-card accent">
+              <h3>Usage</h3>
+              <p>Writing prompts, picking a tool, getting the workflow done. Most of your office already does this at some level, whether or not it is sanctioned.</p>
+            </div>
+            <div class="slide-card accent">
+              <h3>Literacy</h3>
+              <p>Knowing how the tool works, why the output looks confident when it is wrong, and when to reach for something else. This is the skill that makes usage safe.</p>
+            </div>
+          </div>
+          <div class="slide-callout" style="max-width:44rem; margin:1rem auto 0;">The rest of this session is about literacy. Usage is what you do with the literacy afterward.</div>
+        </section>
+
+        <!-- 10. FOUR REASONS (expandable) -->
         <section>
           <h2>Four reasons research administrators should be AI-literate.</h2>
-          <div class="slide-grid tight" style="align-items: stretch;">
-            <div class="slide-card accent">
+          <p class="slide-note" style="margin-bottom:0.5rem;">Click a card to expand.</p>
+          <div class="slide-grid tight reasons-grid" style="align-items: stretch;">
+            <button type="button" class="slide-card accent reason-card" aria-expanded="false">
               <h3>1. To be empowered</h3>
-              <p>Use AI to create, draft, and integrate. Make the tools work for you.</p>
-            </div>
-            <div class="slide-card accent">
+              <p class="reason-summary">Use AI to create, draft, and integrate. Make the tools work for you.</p>
+              <div class="reason-detail">
+                <p>Modern AI can reformat boilerplate, summarize a long solicitation, draft a routine reply to a program officer, or produce a first pass at a Facilities &amp; Other Resources section that you then refine. Learning where it saves you time is what turns AI from a novelty into leverage on the parts of the job that repeat.</p>
+              </div>
+            </button>
+            <button type="button" class="slide-card accent reason-card" aria-expanded="false">
               <h3>2. To know what to trust</h3>
-              <p>Read output critically. Catch hallucinations before they become decisions.</p>
-            </div>
-            <div class="slide-card accent">
+              <p class="reason-summary">Read output critically. Catch hallucinations before they become decisions.</p>
+              <div class="reason-detail">
+                <p>Generative AI produces fluent, confident text even when it is wrong: fabricated citations, invented sponsor deadlines, misremembered CFR sections. If you cannot recognize where the model is guessing, you will pass along errors that look authoritative and become hard to walk back.</p>
+              </div>
+            </button>
+            <button type="button" class="slide-card accent reason-card" aria-expanded="false">
               <h3>3. To be safe</h3>
-              <p>Right tool. Right data. Within institutional rules.</p>
-            </div>
-            <div class="slide-card accent">
+              <p class="reason-summary">Right tool, right data, within institutional rules.</p>
+              <div class="reason-detail">
+                <p>Different AI tools have different data-handling contracts. Consumer chatbots may train on what you paste; enterprise deployments may not. Knowing which tool is sanctioned for which kind of data (public, internal, protected, export-controlled) is what keeps a productivity gain from becoming a compliance incident.</p>
+              </div>
+            </button>
+            <button type="button" class="slide-card accent reason-card" aria-expanded="false">
               <h3>4. To communicate</h3>
-              <p>Understand what AI is. Talk about it clearly with faculty and sponsors.</p>
-            </div>
+              <p class="reason-summary">Understand what AI is. Talk about it clearly with faculty and sponsors.</p>
+              <div class="reason-detail">
+                <p>Faculty will ask whether they can use AI on a proposal. Sponsors are publishing policies on it. IT and compliance need to hear precise language, not vague terms. Being able to explain what an LLM is, what it does with a prompt, and what data it retains lets you have the conversations your job now requires.</p>
+              </div>
+            </button>
           </div>
         </section>
 
@@ -105,18 +147,10 @@
           <p class="slide-note" style="margin-top:1rem;">Placeholder: replace #XXXXXX with your Slido event code, or embed the live word-cloud iframe.</p>
         </section>
 
-        <!-- 11. THE FRAME — RESEARCH ADMIN AS CONTRACT EXECUTION -->
+        <!-- 11. CONTRACT SPINE — THESIS + STACK -->
         <section>
-          <p class="slide-kicker">The frame</p>
           <h2>Research administration upholds the contract between sponsors and researchers.</h2>
-          <p class="slide-lede contract-spine-lede">These contracts are both legal and social, and research administrators hold all of them at the same time.</p>
-
-          <div class="contract-spine-hub">
-            <span class="contract-spine-hub-tag">The primary contract</span>
-            <p class="contract-spine-hub-line">Sponsor <span class="hub-arrow" aria-hidden="true">&harr;</span> Researcher</p>
-            <p class="contract-spine-hub-caption">Upheld by research administration.</p>
-          </div>
-
+          <p class="slide-lede">AI literacy is what lets you validate outputs against these commitments, instead of trusting a process you can no longer inspect.</p>
           <div class="contract-spine-grid">
             <div class="contract-spine-col">
               <h3>Explicit</h3>
@@ -139,17 +173,18 @@
                 <li>Responsible stewardship of federal dollars</li>
                 <li>Scientific integrity</li>
                 <li>Transparency with reviewers</li>
+                <li>Helping PIs find and secure appropriate funding</li>
+                <li>Keeping researchers in compliance with sponsor and institutional rules</li>
+                <li>Sustained support for PIs through the proposal and award lifecycle</li>
                 <li>The institution&rsquo;s public license</li>
               </ul>
             </div>
           </div>
-
-          <p class="contract-spine-payoff">AI literacy means understanding how AI touches the contracts you uphold, because <strong>an AI cannot be held to any of them and the responsibility stays with you</strong>.</p>
         </section>
 
         <!-- 12. SEVEN SKILLS RANKED (merged) -->
         <section>
-          <h2>For research administrators, understanding and evaluation come before prompting.</h2>
+          <h2>The most valuable AI skill is spotting when the output is wrong.</h2>
           <ol style="text-align:left; max-width:38rem; margin-left:auto; margin-right:auto;">
             <li><strong>Understand</strong> &middot; a working mental model of what modern AI is (and isn't).</li>
             <li><strong>Evaluate</strong> &middot; read output critically; verify before forwarding.</li>
@@ -159,6 +194,7 @@
             <li><strong>Create</strong> &middot; draft, summarize, outline; AI as first-pass collaborator.</li>
             <li><strong>Integrate</strong> &middot; fit AI into workflows without breaking them.</li>
           </ol>
+          <div class="slide-callout" style="margin-top:1rem; max-width:38rem; margin-left:auto; margin-right:auto;">And you already know how to do this. Catching errors in budgets, proposals, and reports is the same skill applied to a different kind of output.</div>
         </section>
 
         <!-- 13. RABBIT HOLE CALLOUT -->
@@ -171,7 +207,43 @@
               <p class="slide-kicker">One more thing</p>
               <h2>Literacy is a spectrum.</h2>
               <p class="slide-lede">You don't need to train a model, tune weights, or debug a transformer. That's someone else's job.</p>
-              <div class="slide-callout">Enough of a mental model to hit the four reasons. Effective use, not rabbit-hole depth.</div>
+              <div class="slide-callout">Learn what you need to use AI effectively and safely. Go deeper if you enjoy it, but you don&rsquo;t have to!</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 13b. COURSE OVERVIEW — FIVE MODULES + NCURA LOGO -->
+        <section>
+          <div class="course-overview-header">
+            <img src="img/ncura-logo.png" alt="NCURA" class="course-overview-header-logo" />
+            <h2>Today is a preview of a five-module course for research administrators.</h2>
+            <p class="slide-lede" style="text-align:left; max-width:none; margin:0.35rem 0 0;">Each module builds a specific literacy skill you can bring back to your office.</p>
+          </div>
+          <div class="course-overview-grid">
+            <div class="course-module-card">
+              <span class="course-module-num">1</span>
+              <h3>Introduction to AI in Research Administration</h3>
+              <p>Foundational concepts, terminology, and where AI fits in the work.</p>
+            </div>
+            <div class="course-module-card">
+              <span class="course-module-num">2</span>
+              <h3>Ethical and Responsible AI Use</h3>
+              <p>Vulnerability, harm, benefit, and reversibility as decision lenses.</p>
+            </div>
+            <div class="course-module-card">
+              <span class="course-module-num">3</span>
+              <h3>Prompt Engineering for Research Administration</h3>
+              <p>Writing prompts that specify what you actually need.</p>
+            </div>
+            <div class="course-module-card">
+              <span class="course-module-num">4</span>
+              <h3>Compliance, Risk, and Institutional Governance</h3>
+              <p>Right tool, right data, within institutional rules.</p>
+            </div>
+            <div class="course-module-card">
+              <span class="course-module-num">5</span>
+              <h3>AI Use Cases</h3>
+              <p>What this looks like in the day-to-day work.</p>
             </div>
           </div>
         </section>
@@ -185,7 +257,7 @@
             <div class="split-text">
               <p class="slide-kicker">Module 1 &middot; Defining AI</p>
               <h2>Where do you draw the circle?</h2>
-              <p class="slide-lede">Deep learning is inside AI. Computer vision straddles the line. Linguistic processing sits partly outside. There is no clean boundary.</p>
+              <p class="slide-lede">Deep learning is inside AI. Computer vision straddles the line. Linguistic processing sits partly outside. There is no clean boundary, and part of being AI-literate is knowing that the boundary is contested.</p>
             </div>
           </div>
         </section>
@@ -253,12 +325,13 @@
             </div>
           </div>
           <p class="slide-note" style="margin-top:1rem;">Asking the same question twice is not verification. It is polling the same crowd twice.</p>
+          <div class="slide-callout" style="margin-top:1rem;">Recognizing when the crowd is guessing is the literacy skill. Regulatory citations, specialist regs, and anything recent are exactly the places to check.</div>
         </section>
 
         <!-- MODULE 1.4 — AI OR DATA SCIENCE -->
         <section>
           <p class="slide-kicker">Module 1 &middot; Task fit</p>
-          <h2>AI, or data science? Match the task.</h2>
+          <h2>Knowing which category a task belongs to is a literacy skill of its own.</h2>
           <div class="slide-grid tight" style="align-items: stretch;">
             <div class="slide-card accent" style="height: 100%;">
               <h3>Data science</h3>
@@ -344,31 +417,29 @@
           </p>
         </section>
 
-        <!-- MODULE 1.5c — OUTPUTS VALIDATED, WORKFLOWS APPROVED -->
+        <!-- MODULE 1.5c — TWO LEVELS OF ASSURANCE -->
         <section>
           <p class="slide-kicker">Module 1 &middot; Human-in-the-loop, done right</p>
-          <h2>Outputs are validated. Workflows are approved.</h2>
-          <p class="slide-lede assurance-lede-top">Workflows are approved <strong>by validating their outputs</strong>: the validation provides the evidence on which a person shoulders the responsibility to cover what the workflow produces.</p>
-          <div class="assurance-flow">
+          <h2>Assurance operates at two levels.</h2>
+          <p class="slide-lede assurance-lede-top">Output-level and workflow-level assurance are complementary, and skipping either one breaks the chain. Higher-stakes work leans more on assuring individual outputs, while lower-stakes work leans more on assuring the workflow that produces them.</p>
+          <div class="assurance-grid">
             <div class="assurance-card">
-              <span class="assurance-tag">Step 1 &middot; per instance</span>
-              <h3>Validate outputs</h3>
-              <p class="assurance-lede">Spot-check outputs, sample them, and measure error rates to gather evidence that the workflow is behaving as expected.</p>
+              <span class="assurance-tag">Output-level &middot; per instance</span>
+              <h3>Assure each output</h3>
+              <p class="assurance-lede">Depending on stakes, each output is either signed off individually or checked through a defensible sample.</p>
               <ul>
-                <li>Is this specific output accurate?</li>
-                <li>Does it meet the requirement?</li>
-                <li>What is the error rate over time?</li>
+                <li><strong>High stakes:</strong> full sign-off on every one (IRB protocols, budget revisions, sponsor invoices).</li>
+                <li><strong>Lower stakes:</strong> sampled validation with tracked error rates (reconciliations, closeout audits).</li>
               </ul>
             </div>
-            <div class="assurance-arrow" aria-hidden="true">&rarr;</div>
             <div class="assurance-card">
-              <span class="assurance-tag">Step 2 &middot; a person signs off</span>
-              <h3>Approve the workflow</h3>
-              <p class="assurance-lede">Based on that evidence, a person shoulders responsibility for what the workflow produces.</p>
+              <span class="assurance-tag">Workflow-level &middot; upfront and ongoing</span>
+              <h3>Assure the workflow</h3>
+              <p class="assurance-lede">A named person owns the process itself, designs it to catch errors, and revisits the approval when it changes.</p>
               <ul>
-                <li>Who owns this workflow?</li>
-                <li>Where are the checkpoints and audit trail?</li>
-                <li>What triggers re-approval?</li>
+                <li>Who owns this workflow and what are they on the hook for?</li>
+                <li>Where are the checkpoints, and is there an audit trail?</li>
+                <li>What triggers a re-approval of the process?</li>
               </ul>
             </div>
           </div>
@@ -376,7 +447,7 @@
             <p>&ldquo;A computer can never be held accountable, therefore a computer must never make a management decision.&rdquo;</p>
             <cite>IBM training manual, 1979</cite>
           </blockquote>
-          <p class="assurance-payoff">This is why AI will not replace research administrators: the job is <strong>approval</strong>, approval requires <strong>accountability</strong>, and only a person can carry accountability.</p>
+          <p class="assurance-payoff">This is why AI will not replace research administrators: both levels of assurance ultimately resolve to a person shouldering responsibility, which is something only a person can do.</p>
         </section>
 
         <!-- MODULE 1.6 — TASK SORTER (INTERACTIVE) -->
@@ -424,7 +495,7 @@
               <img src="img/slides/module-2-ethics.jpg" alt="Hands holding a balance scale" />
             </div>
             <div class="split-text">
-              <p class="slide-kicker">Module 2</p>
+              <p class="slide-kicker">Module 2 &middot; So you can recognize when an AI decision raises an ethical question</p>
               <h2>Ethical and responsible AI use.</h2>
               <ul style="text-align:left;">
                 <li><strong>Four guiding questions.</strong> Vulnerability, harm, benefit, reversibility.</li>
@@ -434,6 +505,155 @@
               </ul>
             </div>
           </div>
+        </section>
+
+        <!-- MODULE 2.1a — VULNERABILITY AND TRUST -->
+        <section>
+          <p class="slide-kicker">Module 2 &middot; Why it matters here</p>
+          <h2>You sit at the center of a network of dependencies.</h2>
+          <p class="slide-lede">Every AI decision you make either honors or strains the trust the parties around you have placed in your office.</p>
+          <div class="dependency-hub">
+            <span class="dependency-hub-label">Research administration</span>
+          </div>
+          <p class="dependency-row-label">Downstream &middot; who depends on you</p>
+          <div class="dependency-grid">
+            <div class="dependency-card">
+              <h3>Principal investigators</h3>
+              <p>Depend on you for accurate budgets, correct reading of awards, and compliance flags before they become incidents.</p>
+            </div>
+            <div class="dependency-card">
+              <h3>Your institution</h3>
+              <p>Depends on you to safeguard data, maintain sponsor relationships, and act in ways the institution can stand behind.</p>
+            </div>
+            <div class="dependency-card">
+              <h3>Sponsors</h3>
+              <p>Depend on the integrity of the documents you produce and the accuracy of what you submit on the institution&rsquo;s behalf.</p>
+            </div>
+            <div class="dependency-card">
+              <h3>The public</h3>
+              <p>Depends on responsible stewardship of federal dollars and the social license that funds research at your institution.</p>
+            </div>
+          </div>
+          <p class="dependency-row-label" style="margin-top:0.8rem;">Upstream &middot; whom you depend on</p>
+          <div class="dependency-grid dependency-grid-upstream">
+            <div class="dependency-card">
+              <h3>AI vendors</h3>
+              <p>Shape what the tools can do, how they handle your prompts, and what changes without notice.</p>
+            </div>
+            <div class="dependency-card">
+              <h3>Institutional IT and security</h3>
+              <p>Set which tools are sanctioned, where data can go, and what happens after an incident.</p>
+            </div>
+            <div class="dependency-card">
+              <h3>Training data and its subjects</h3>
+              <p>The people, papers, and prior work behind every model output. Their consent and context shape yours.</p>
+            </div>
+          </div>
+          <p class="slide-note dependency-payoff">Ethics in this setting is not abstract. It is deciding who bears the risk of an AI choice you make.</p>
+        </section>
+
+        <!-- MODULE 2.1b — FOUR GUIDING QUESTIONS -->
+        <section>
+          <p class="slide-kicker">Module 2 &middot; A decision framework</p>
+          <h2>Four questions to ask before adopting AI in any workflow.</h2>
+          <div class="slide-grid tight guiding-questions-grid" style="align-items: stretch;">
+            <div class="slide-card accent guiding-question-card">
+              <span class="guiding-question-num">1</span>
+              <h3>Who is made vulnerable?</h3>
+              <p>A PI whose preliminary data is exposed. A subject whose consent did not cover this use. A junior staff member whose role is quietly reshaped.</p>
+            </div>
+            <div class="slide-card accent guiding-question-card">
+              <span class="guiding-question-num">2</span>
+              <h3>Who benefits and who is harmed?</h3>
+              <p>You may save thirty minutes on a boilerplate draft while a colleague loses the reps that would have made them competent at it.</p>
+            </div>
+            <div class="slide-card accent guiding-question-card">
+              <span class="guiding-question-num">3</span>
+              <h3>Is the benefit worth the cost?</h3>
+              <p>Weigh the time saved against the risk of a plausible but wrong regulatory citation reaching a sponsor.</p>
+            </div>
+            <div class="slide-card accent guiding-question-card">
+              <span class="guiding-question-num">4</span>
+              <h3>Is it reversible?</h3>
+              <p>A draft on your screen is easy to revise. A hallucinated statistic already in a submitted proposal is not.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 2.1c — DESCRIPTIVE VS NORMATIVE -->
+        <section>
+          <p class="slide-kicker">Module 2 &middot; A common trap</p>
+          <h2>&ldquo;Everyone uses it&rdquo; is not the same as &ldquo;everyone should.&rdquo;</h2>
+          <p class="slide-lede">A statement about what people do is descriptive. A statement about what people ought to do is normative. Sliding from the first to the second, without the reasoning that connects them, is the naturalistic fallacy.</p>
+          <div class="slide-callout" style="max-width:44rem; margin:1rem auto 0;">
+            <strong>The most common form in an RA office:</strong> &ldquo;Everyone in our office pastes drafts into ChatGPT already, so it must be fine.&rdquo; That is a description of behavior. It is not, by itself, an argument that the behavior is permissible.
+          </div>
+        </section>
+
+        <!-- MODULE 2.1d — DISCLOSURE -->
+        <section>
+          <p class="slide-kicker">Module 2 &middot; Practical posture</p>
+          <h2>When you use AI on someone else&rsquo;s work, tell them.</h2>
+          <div class="slide-grid tight" style="align-items: stretch;">
+            <div class="slide-card accent">
+              <h3>To the PI</h3>
+              <p>Anything that touches their proposal, biosketch, budget narrative, or communication going out under their name.</p>
+            </div>
+            <div class="slide-card accent">
+              <h3>To the sponsor</h3>
+              <p>Where sponsor terms require it. NIH prohibits AI in peer review. Many journals require an AI-use statement. Check the specific solicitation.</p>
+            </div>
+            <div class="slide-card accent">
+              <h3>To your team</h3>
+              <p>Process changes, shared tool decisions, and any use that affects how the office produces its work.</p>
+            </div>
+          </div>
+          <p class="slide-note" style="margin-top:1rem; max-width:44rem; margin-left:auto; margin-right:auto;">Default posture: when in doubt, disclose upward and to anyone affected. Non-disclosure erodes trust faster than the AI use itself.</p>
+        </section>
+
+        <!-- MODULE 2.1e — TRAGEDY OF THE COMMONS (THE COMMON IS TRUST) -->
+        <section>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/common-good.jpg" alt="A hiker at a crossroads with two signs: Best for YOU and Best for ALL." />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">Module 2 &middot; Recognizing when your individual choice becomes a collective problem</p>
+              <h2>The common that AI depletes is trust.</h2>
+              <p class="slide-lede">Each AI-drafted proposal, email, or audit response is defensible on its own. Every unverified one contributes to eroding sponsor and institutional trust in the pipeline as a whole.</p>
+              <div class="slide-callout">Individual use is often rational: you save time and the document looks fine. The cost is paid collectively, in the trust the profession needs to keep operating.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 2.1f — ENERGY FOOTPRINT: MINDROUTER CLUSTER -->
+        <section>
+          <p class="slide-kicker">Module 2 &middot; A literacy question</p>
+          <h2>Knowing your AI footprint is part of being AI-literate.</h2>
+          <p class="slide-lede">You cannot reason about the environmental cost of an AI decision without data on what your own tools actually consume. Here is what ours looks like: MindRouter, the AI4RA cluster at the University of Idaho, monitored across 12 nodes at INL Idaho Falls and UI Moscow from March 10 to March 24, 2026.</p>
+          <div class="energy-stats-grid">
+            <div class="energy-stat">
+              <p class="energy-stat-value">$33</p>
+              <p class="energy-stat-label">Daily cost<br/>@ $0.12/kWh</p>
+            </div>
+            <div class="energy-stat">
+              <p class="energy-stat-value">275 kWh</p>
+              <p class="energy-stat-label">Daily energy<br/>facility, PUE 1.22</p>
+            </div>
+            <div class="energy-stat">
+              <p class="energy-stat-value">31 kg</p>
+              <p class="energy-stat-label">Daily CO<sub>2</sub><br/>Idaho hydro grid</p>
+            </div>
+            <div class="energy-stat">
+              <p class="energy-stat-value">~9</p>
+              <p class="energy-stat-label">US households<br/>equivalent daily use</p>
+            </div>
+          </div>
+          <div class="energy-context">
+            <p>Annualized, the cluster runs about <strong>$12,054</strong> in electricity and <strong>11.4 tonnes</strong> of CO<sub>2</sub>. The same compute on the Northern Virginia grid would produce roughly <strong>3.4&times;</strong> more emissions, because Idaho&rsquo;s grid runs on hydropower at <strong>113 gCO<sub>2</sub>/kWh</strong>, about <strong>29 percent</strong> of the US national average.</p>
+            <p>The literacy piece: if you cannot answer, for your own institution, <em>what does our AI use cost, and what does it emit?</em>, you cannot participate meaningfully in the conversation about whether that use is worth it. Ask for the numbers. If they do not exist, ask why.</p>
+          </div>
+          <p class="energy-footnote">Source: <a href="https://ai.uidaho.edu/gpu_telemetry_analysis.html" target="_blank" rel="noopener noreferrer">ai.uidaho.edu/gpu_telemetry_analysis.html</a></p>
         </section>
 
         <!-- MODULE 2.2 — TRUST RATER (INTERACTIVE) -->
@@ -472,7 +692,7 @@
               <img src="img/slides/module-3-prompt.jpg" alt="Scrabble tiles spelling out words" />
             </div>
             <div class="split-text">
-              <p class="slide-kicker">Module 3</p>
+              <p class="slide-kicker">Module 3 &middot; Where AI literacy becomes a practical skill</p>
               <h2>Prompt engineering.</h2>
               <ul style="text-align:left;">
                 <li><strong>Seven components.</strong> Role, context, instruction, input, format, constraints, examples.</li>
@@ -535,7 +755,7 @@
               <div class="char-role">Reporting</div>
             </div>
           </div>
-          <p class="slide-note" style="margin-top:0.8rem;">Hover any card. Full framework at nate-layman.github.io/promptulus.</p>
+          <p class="slide-note" style="margin-top:0.8rem;">Hover any card. Full framework at <a href="https://nate-layman.github.io/promptulus" target="_blank" rel="noopener noreferrer">nate-layman.github.io/promptulus</a>.</p>
         </section>
 
         <!-- MODULE 3.3 — CONTEXT WINDOW SLIDER -->
@@ -572,7 +792,7 @@
             </div>
           </div>
           <div class="slide-callout" style="margin-top:0.8rem;">
-            The window has a fixed size. Getting the balance right is the skill.
+            The window has a fixed size. Understanding that these four categories compete for the same space is what lets you diagnose why an AI seemed to forget what you told it earlier in a long conversation.
           </div>
         </section>
 
@@ -592,7 +812,7 @@
               <img src="img/slides/module-4-compliance.jpg" alt="A pyramid against blue sky" />
             </div>
             <div class="split-text">
-              <p class="slide-kicker">Module 4</p>
+              <p class="slide-kicker">Module 4 &middot; Understanding which rules apply to which AI tools in your work</p>
               <h2>Compliance, risk, and governance.</h2>
               <ul style="text-align:left;">
                 <li><strong>Compliance Pyramid.</strong> Most restrictive applicable guideline wins.</li>
@@ -680,7 +900,7 @@
               <img src="img/slides/module-5-usecases.jpg" alt="A person writing at a desk with pen and paper" />
             </div>
             <div class="split-text">
-              <p class="slide-kicker">Module 5</p>
+              <p class="slide-kicker">Module 5 &middot; Where AI literacy meets the actual job</p>
               <h2>AI use cases.</h2>
               <ul style="text-align:left;">
                 <li><strong>Pre-award.</strong> Budget justifications, RFA extraction, plain-language checks.</li>

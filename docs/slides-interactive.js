@@ -434,4 +434,12 @@
     slider.addEventListener('change', update);
     update();
   });
+
+  /* --- Expandable reason cards (Four Reasons slide) --- */
+  document.querySelectorAll('.reason-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var isOpen = card.classList.toggle('is-open');
+      card.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
 })();

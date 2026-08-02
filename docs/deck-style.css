@@ -69,7 +69,7 @@
 /* ---- Lede: comfortable line height and constrained width -----------------
  */
 .slide-lede {
-  max-width: 36rem;
+  max-width: 50rem;
   margin: 0 auto 1rem;
   font-size: 1.18rem;
   line-height: 1.5;
@@ -388,7 +388,7 @@ section.title-slide .slide-lede {
  * Two-card comparison, IBM accountability quote, and payoff line.
  */
 .assurance-lede-top {
-  max-width: 46rem;
+  max-width: 54rem;
   margin: 0 auto 0.9rem;
   font-size: 1.05rem;
   color: var(--muted, #555);
@@ -467,7 +467,7 @@ section.title-slide .slide-lede {
 }
 
 .assurance-quote {
-  max-width: 46rem;
+  max-width: 54rem;
   margin: 1.1rem auto 0.4rem;
   padding: 0.9rem 1.2rem;
   background: rgba(241, 179, 0, 0.08);
@@ -494,7 +494,7 @@ section.title-slide .slide-lede {
 }
 
 .assurance-payoff {
-  max-width: 46rem;
+  max-width: 54rem;
   margin: 0.6rem auto 0;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -507,7 +507,7 @@ section.title-slide .slide-lede {
  * Central hero + two-column explicit/implicit lists + payoff line.
  */
 .contract-spine-lede {
-  max-width: 42rem;
+  max-width: 52rem;
   margin: 0 auto 0.9rem;
 }
 
@@ -594,10 +594,357 @@ section.title-slide .slide-lede {
 }
 
 .contract-spine-payoff {
-  max-width: 46rem;
+  max-width: 52rem;
   margin: 1rem auto 0;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--ink, #191919);
   text-align: center;
+}
+
+/* ---- Vulnerability & Trust (Module 2) ---------------------------------- */
+.dependency-hub {
+  max-width: 22rem;
+  margin: 0.6rem auto 0.9rem;
+  background: var(--gold, #f1b300);
+  color: var(--ink, #191919);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(241, 179, 0, 0.35);
+}
+
+.dependency-hub-label {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.dependency-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.dependency-card {
+  background: #fff;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  border-top: 5px solid var(--gold, #f1b300);
+  border-radius: 0.55rem;
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dependency-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--ink, #191919);
+}
+
+.dependency-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--muted, #555);
+}
+
+.dependency-payoff {
+  max-width: 44rem;
+  margin: 1rem auto 0;
+  text-align: center;
+}
+
+.dependency-row-label {
+  max-width: 60rem;
+  margin: 0.4rem auto 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold, #f1b300);
+  text-align: left;
+}
+
+.dependency-grid-upstream {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* ---- MindRouter energy slide (Module 2) -------------------------------- */
+.energy-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+  max-width: 62rem;
+  margin: 0.4rem auto 0.9rem;
+}
+
+.energy-stat {
+  background: #fff;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  border-top: 5px solid var(--gold, #f1b300);
+  border-radius: 0.55rem;
+  padding: 0.75rem 0.9rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.energy-stat-value {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--ink, #191919);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+}
+
+.energy-stat-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted, #555);
+  letter-spacing: 0.04em;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.energy-context {
+  max-width: 58rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.energy-context p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted, #555);
+  text-align: left;
+}
+
+.energy-footnote {
+  max-width: 58rem;
+  margin: 0.8rem auto 0;
+  font-size: 0.7rem;
+  color: var(--muted, #555);
+  text-align: center;
+  font-style: italic;
+}
+
+/* ---- Four guiding questions (Module 2) --------------------------------- */
+.guiding-question-card {
+  position: relative;
+  padding-top: 1.6rem;
+}
+
+.guiding-question-num {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.9rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--gold, #f1b300);
+  line-height: 1;
+}
+
+/* ---- Expandable Four Reasons cards ------------------------------------- */
+.reason-card {
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  position: relative;
+}
+
+.reason-card:hover,
+.reason-card:focus-visible {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.reason-card::after {
+  content: "+";
+  position: absolute;
+  top: 0.55rem;
+  right: 0.85rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--gold, #f1b300);
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.reason-card.is-open::after {
+  content: "−";
+  transform: rotate(0deg);
+}
+
+.reason-detail {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.2s ease, margin-top 0.2s ease;
+  margin-top: 0;
+}
+
+.reason-card.is-open .reason-detail {
+  max-height: 30rem;
+  opacity: 1;
+  margin-top: 0.6rem;
+}
+
+.reason-detail p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted, #555);
+}
+
+/* ---- Course overview slide (five modules + NCURA logo) ------------------
+ * Five compact numbered cards in a single row, with an attribution footer
+ * that carries the NCURA logo.
+ */
+.course-overview-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 60rem;
+  margin: 0 auto 0.8rem;
+}
+
+.course-overview-header h2 {
+  margin: 0;
+  text-align: left;
+  max-width: none;
+}
+
+.course-overview-header-logo {
+  display: block;
+  height: 7rem;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.course-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.7rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.course-module-card {
+  background: #fff;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  border-top: 5px solid var(--gold, #f1b300);
+  border-radius: 0.55rem;
+  padding: 0.7rem 0.75rem 0.85rem;
+  text-align: left;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.course-module-num {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--gold, #f1b300);
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.course-module-card h3 {
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin: 0 0 0.35rem;
+  line-height: 1.2;
+  color: var(--ink, #191919);
+}
+
+.course-module-card p {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--muted, #555);
+}
+
+.course-overview-masthead {
+  display: block;
+  height: 5rem;
+  width: auto;
+  margin: 0 auto 0.9rem;
+  object-fit: contain;
+}
+
+/* ---- Title slide presenter block --------------------------------------- */
+section.title-slide .title-presenter {
+  margin: 1.4rem 0 0.3rem;
+  font-size: 4rem !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  color: var(--ink, #191919);
+}
+
+section.title-slide .title-presenter-affil {
+  margin: 0.05rem 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--muted, #555);
+  line-height: 1.35;
+}
+
+/* ---- Title slide institutional logo row -------------------------------- */
+.title-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.title-logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.title-logo-link:hover,
+.title-logo-link:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.title-logo {
+  height: 6rem;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.title-logo-lg {
+  height: 7.2rem;
+}
+
+.title-logo-sm {
+  height: 3.6rem;
+}
+
+.title-logo-xl {
+  height: 9.5rem;
 }
