@@ -6,66 +6,150 @@
     <meta name="theme-color" content="#f1b300" />
     <meta name="robots" content="noindex, nofollow" />
     <title>Foundational AI Literacy for Research Administrators | NCURA Annual 2026</title>
-    <meta name="description" content="Concurrent session slides at NCURA Annual 2026: Foundational AI Literacy for Research Administrators." />
+    <meta name="description" content="NCURA Annual 2026 concurrent session: foundational AI literacy for research administrators. Concepts, task selection, prompt design, evaluation, ethics." />
     <link rel="stylesheet" href="reveal/dist/reveal.css" />
     <link rel="stylesheet" href="reveal/dist/theme/white.css" />
     <link rel="stylesheet" href="slides.css" />
+    <link rel="stylesheet" href="deck-style.css" />
   </head>
   <body class="slides-page">
     <div class="reveal">
       <div class="slides">
 
         <!-- 1. TITLE -->
-        <section class="title-slide" data-background-color="#f1b300">
-          <p class="slide-kicker slide-kicker-dark">NCURA Annual 2026 &middot; Concurrent Session</p>
+        <section class="title-slide">
+          <p class="slide-kicker">NCURA Annual 2026 &middot; Concurrent Session</p>
           <h1>Foundational AI Literacy for Research Administrators</h1>
-          <p class="slide-lede slide-dark">A practical, non-technical introduction to modern AI: how it works, when it helps, where it fails, and how to use it responsibly.</p>
-          <p class="slide-dark" style="margin-top:1rem; font-weight:700;">Nathan Layman &middot; AI4RA / University of Idaho</p>
+          <p class="slide-lede">A practical foundation in AI for research administration: how it works, what it can do, where it falls short, and how to use it responsibly.</p>
+          <p style="margin-top:1rem; font-weight:700;">Nathan Layman &middot; AI4RA / University of Idaho</p>
         </section>
 
-        <!-- 2. WHY AI LITERACY -->
+        <!-- 3. LITERACY QUOTE -->
         <section>
-          <p class="slide-kicker">Why AI literacy?</p>
-          <h2>The next chapter of digital literacy.</h2>
-          <p class="slide-quote">"The ability to <strong>access, manage, understand, integrate, communicate, evaluate and create</strong> information safely and appropriately &hellip; to build <strong>resilience in the face of disinformation</strong>."</p>
-          <p class="slide-note">Adapted from UNESCO's definition of digital literacy. Same verbs. New class of tool.</p>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/literacy-quote.jpg" alt="Hands turning the pages of an open book" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">What "literacy" has always meant</p>
+              <p class="slide-quote">"Reading the world always precedes reading the word, and reading the word implies continually reading the world."</p>
+              <p class="slide-note">Paulo Freire, <em>Literacy: Reading the Word and the World</em> (1987).</p>
+              <p class="slide-quote" style="margin-top:1.2rem;">"The ability to understand, evaluate, use and engage with written texts to participate in society, to achieve one's goals, and to develop one's knowledge and potential."</p>
+              <p class="slide-note">OECD PIAAC Literacy Framework.</p>
+            </div>
+          </div>
         </section>
 
-        <!-- 3. FOUR REASONS -->
+        <!-- 5. DIGITAL LITERACY (UNESCO) -->
         <section>
-          <p class="slide-kicker">Section 1</p>
-          <h2>Four reasons to be AI-literate.</h2>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/digital-literacy.jpg" alt="Hands on a laptop keyboard" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">Digital literacy</p>
+              <h2>UNESCO defines digital literacy with seven verbs.</h2>
+              <p class="slide-quote">"The ability to <strong>access, manage, understand, integrate, communicate, evaluate and create</strong> information safely and appropriately &hellip; to build <strong>resilience in the face of disinformation</strong>."</p>
+              <p class="slide-note">UNESCO's definition of digital literacy. Same skills as literacy. New class of tool.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. AI LITERACY DEFINITIONS -->
+        <section>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/ai-literacy-defs.jpg" alt="A small team collaborating around a laptop" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">AI literacy</p>
+              <h2>The same verbs, plus one.</h2>
+              <p class="slide-quote">"AI literacy equips learners to understand how AI systems work, critically <strong>evaluate their outputs</strong>, and use them ethically and creatively."</p>
+              <p class="slide-note">OECD &amp; European Commission, <em>Empowering Learners for the Age of AI</em> (2025). Long &amp; Magerko (ACM CHI 2020) add the reframe: not just evaluate AI, but <strong>collaborate</strong> with it.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10. FOUR REASONS -->
+        <section>
+          <h2>Four reasons research administrators should be AI-literate.</h2>
           <div class="slide-grid tight" style="align-items: stretch;">
-            <div class="slide-card accent" style="height: 100%;">
+            <div class="slide-card accent">
               <h3>1. To be empowered</h3>
               <p>Use AI to create, draft, and integrate. Make the tools work for you.</p>
             </div>
-            <div class="slide-card accent" style="height: 100%;">
+            <div class="slide-card accent">
               <h3>2. To know what to trust</h3>
               <p>Read output critically. Catch hallucinations before they become decisions.</p>
             </div>
-            <div class="slide-card accent" style="height: 100%;">
+            <div class="slide-card accent">
               <h3>3. To be safe</h3>
               <p>Right tool. Right data. Within institutional rules.</p>
             </div>
-            <div class="slide-card accent" style="height: 100%;">
+            <div class="slide-card accent">
               <h3>4. To communicate</h3>
               <p>Understand what AI is. Talk about it clearly with faculty and sponsors.</p>
             </div>
           </div>
         </section>
 
-        <!-- 9. SEVEN SKILLS — SECTION HEADER -->
-        <section data-background-color="#191919">
-          <p class="slide-kicker">Section 2</p>
-          <h1 style="color:#fff;">Seven skills, ranked.</h1>
-          <p class="slide-lede slide-dark" style="color:rgba(255,255,255,0.85);">Not all seven verbs matter equally. Ranked by what a research administrator needs first.</p>
+        <!-- 10b. SLIDO POLL — CORE FUNCTION OF RESEARCH ADMIN -->
+        <section>
+          <p class="slide-kicker">Warm-up &middot; Interactive</p>
+          <h2>What is the core function of research administration?</h2>
+          <p class="slide-lede">Our mission, in ten words or less.</p>
+          <div class="slide-callout" style="text-align:center; font-size:1.4rem;">
+            <strong>Join at</strong> <span style="font-weight:800;">slido.com</span><br/>
+            <span style="font-size:2.5rem; letter-spacing:0.2em; font-weight:800;">#XXXXXX</span>
+          </div>
+          <p class="slide-note" style="margin-top:1rem;">Placeholder: replace #XXXXXX with your Slido event code, or embed the live word-cloud iframe.</p>
         </section>
 
-        <!-- 10. SEVEN SKILLS — LIST -->
+        <!-- 11. THE FRAME — RESEARCH ADMIN AS CONTRACT EXECUTION -->
         <section>
-          <p class="slide-kicker">The seven skills</p>
-          <h2>What AI literacy looks like, in practice.</h2>
+          <p class="slide-kicker">The frame</p>
+          <h2>Research administration upholds the contract between sponsors and researchers.</h2>
+          <p class="slide-lede contract-spine-lede">These contracts are both legal and social, and research administrators hold all of them at the same time.</p>
+
+          <div class="contract-spine-hub">
+            <span class="contract-spine-hub-tag">The primary contract</span>
+            <p class="contract-spine-hub-line">Sponsor <span class="hub-arrow" aria-hidden="true">&harr;</span> Researcher</p>
+            <p class="contract-spine-hub-caption">Upheld by research administration.</p>
+          </div>
+
+          <div class="contract-spine-grid">
+            <div class="contract-spine-col">
+              <h3>Explicit</h3>
+              <ul>
+                <li>2 CFR 200 and agency T&amp;Cs</li>
+                <li>IRB / IACUC / IBC approvals</li>
+                <li>Subrecipient agreements</li>
+                <li>F&amp;A rate agreement</li>
+                <li>FCOI disclosures</li>
+                <li>Effort commitments</li>
+                <li>Data-sharing plans</li>
+                <li>Cost share</li>
+              </ul>
+            </div>
+            <div class="contract-spine-col">
+              <h3>Implicit</h3>
+              <ul>
+                <li>Accuracy of what is submitted</li>
+                <li>Timeliness of reporting</li>
+                <li>Responsible stewardship of federal dollars</li>
+                <li>Scientific integrity</li>
+                <li>Transparency with reviewers</li>
+                <li>The institution&rsquo;s public license</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="contract-spine-payoff">AI literacy means understanding how AI touches the contracts you uphold, because <strong>an AI cannot be held to any of them and the responsibility stays with you</strong>.</p>
+        </section>
+
+        <!-- 12. SEVEN SKILLS RANKED (merged) -->
+        <section>
+          <h2>For research administrators, understanding and evaluation come before prompting.</h2>
           <ol style="text-align:left; max-width:38rem; margin-left:auto; margin-right:auto;">
             <li><strong>Understand</strong> &middot; a working mental model of what modern AI is (and isn't).</li>
             <li><strong>Evaluate</strong> &middot; read output critically; verify before forwarding.</li>
@@ -77,34 +161,601 @@
           </ol>
         </section>
 
-        <!-- 11. RABBIT HOLE CALLOUT -->
+        <!-- 13. RABBIT HOLE CALLOUT -->
         <section>
-          <p class="slide-kicker">One more thing</p>
-          <h2>Literacy is a spectrum.</h2>
-          <p class="slide-lede">You don't need to train a model, tune weights, or debug a transformer. That's someone else's job.</p>
-          <div class="slide-callout">Enough of a mental model to hit the four reasons. Effective use, not rabbit-hole depth.</div>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/rabbit-hole.jpg" alt="An open road stretching toward the horizon" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">One more thing</p>
+              <h2>Literacy is a spectrum.</h2>
+              <p class="slide-lede">You don't need to train a model, tune weights, or debug a transformer. That's someone else's job.</p>
+              <div class="slide-callout">Enough of a mental model to hit the four reasons. Effective use, not rabbit-hole depth.</div>
+            </div>
+          </div>
         </section>
 
-        <!-- 12. LEARNING OBJECTIVES -->
+        <!-- MODULE 1.1 — WHERE DO YOU DRAW THE CIRCLE? (IMAGE) -->
+        <section>
+          <div class="slide-split img-wide">
+            <div class="split-img">
+              <img src="img/slides/what-is-ai.png" alt="Nested Venn diagram: AI contains Machine Learning contains Deep Learning; NLP and Computer Vision straddle AI's boundary; Linguistic Processing and Image Processing sit partly outside AI." />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">Module 1 &middot; Defining AI</p>
+              <h2>Where do you draw the circle?</h2>
+              <p class="slide-lede">Deep learning is inside AI. Computer vision straddles the line. Linguistic processing sits partly outside. There is no clean boundary.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 1.2 — SLIDO POLL: WHAT MAKES SOMETHING AI? -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; Interactive</p>
+          <h2>What makes something AI?</h2>
+          <p class="slide-lede">How do we draw the circle around what is and isn't AI?</p>
+          <div class="slide-callout" style="text-align:center; font-size:1.4rem;">
+            <strong>Join at</strong> <span style="font-weight:800;">slido.com</span><br/>
+            <span style="font-size:2.5rem; letter-spacing:0.2em; font-weight:800;">#XXXXXX</span>
+          </div>
+          <p class="slide-note" style="margin-top:1rem;">Placeholder: replace #XXXXXX with your Slido event code, add a QR image, or embed the live word-cloud iframe.</p>
+        </section>
+
+        <!-- MODULE 1.3 — AI SPECTRUM (INTERACTIVE) -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; Defining AI</p>
+          <h2>The interpretability-flexibility tradeoff.</h2>
+          <div class="ai-spectrum" data-stops='[{"name":"Best fit line","interpretability":100,"flexibility":5,"desc":"Draw a straight line through the data. Write the equation on a napkin."},{"name":"Logistic regression","interpretability":90,"flexibility":12,"desc":"Best fit line for yes/no outcomes. Coefficients still printable."},{"name":"Decision tree","interpretability":80,"flexibility":25,"desc":"A flowchart of if/then questions. You can trace every decision."},{"name":"Random forest","interpretability":55,"flexibility":50,"desc":"Hundreds of decision trees voting. Any single prediction is hard to trace back to a rule."},{"name":"Gradient boosting","interpretability":40,"flexibility":65,"desc":"Trees built sequentially, each fixing the last one\u0027s mistakes. Strong on tabular data."},{"name":"Neural network","interpretability":25,"flexibility":75,"desc":"Layers of weighted connections tuned by training. Weights are numeric, not narrative."},{"name":"Deep learning","interpretability":15,"flexibility":85,"desc":"Neural network with many layers. Powers image, audio, and video AI. Effectively opaque."},{"name":"Transformer","interpretability":8,"flexibility":92,"desc":"Attention-based network. The architecture behind modern language and vision AI."},{"name":"LLM","interpretability":3,"flexibility":100,"desc":"Billions of parameters. Extraordinary capability, minimal explainability."}]'>
+            <input type="range" min="0" max="8" step="1" value="0" class="ai-spectrum-range" aria-label="AI model spectrum slider" />
+            <div class="ai-spectrum-stops"></div>
+            <div class="ai-spectrum-card">
+              <div class="ai-spectrum-name">Best fit line</div>
+              <div class="ai-spectrum-metrics">
+                <div>
+                  <div class="ai-spectrum-metric-label">Interpretability</div>
+                  <div class="ai-spectrum-metric-bar"><div class="ai-spectrum-metric-fill" data-metric="interpretability" style="width:100%"></div></div>
+                </div>
+                <div>
+                  <div class="ai-spectrum-metric-label">Flexibility</div>
+                  <div class="ai-spectrum-metric-bar"><div class="ai-spectrum-metric-fill" data-metric="flexibility" style="width:5%"></div></div>
+                </div>
+              </div>
+              <p class="ai-spectrum-desc">Draw a straight line through the data. Write the equation on a napkin.</p>
+            </div>
+          </div>
+          <div class="slide-callout" style="margin-top:1rem;">
+            <strong>What this means for RAs:</strong> interpretability and auditability go hand in hand.
+          </div>
+        </section>
+
+        <!-- MODULE 1.4 — WORKING DEFINITION -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; Working definition</p>
+          <h2>AI is any tool where we cannot say exactly how it arrived at the answer.</h2>
+          <p class="slide-lede">The output can be repeatable. The <em>reasoning</em> cannot be narrated. Inferred is about <em>how</em>, not <em>what</em>.</p>
+          <div class="slide-callout" style="margin-top:1.5rem;">We approve the workflow, not the individual output. Validation, human review, and audit trails carry the assurance load.</div>
+        </section>
+
+        <!-- MODULE 1.5 — CROWD OF AMATEURS -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; A mental model</p>
+          <h2>Imagine 1,000 broadly-informed strangers.</h2>
+          <p class="slide-lede">An LLM behaves like a crowd surveying itself and reporting the consensus.</p>
+          <div class="slide-grid tight" style="align-items: stretch;">
+            <div class="slide-card accent" style="height: 100%;">
+              <h3>Strong at</h3>
+              <p>Consensus knowledge. Common sense. Drafting. Summarizing.</p>
+            </div>
+            <div class="slide-card accent" style="height: 100%;">
+              <h3>Weak at</h3>
+              <p>Novel ideas. Contested claims. Specialist material. Anything recent.</p>
+            </div>
+          </div>
+          <p class="slide-note" style="margin-top:1rem;">Asking the same question twice is not verification. It is polling the same crowd twice.</p>
+        </section>
+
+        <!-- MODULE 1.4 — AI OR DATA SCIENCE -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; Task fit</p>
+          <h2>AI, or data science? Match the task.</h2>
+          <div class="slide-grid tight" style="align-items: stretch;">
+            <div class="slide-card accent" style="height: 100%;">
+              <h3>Data science</h3>
+              <p>Reproducible. Precise. Auditable.</p>
+              <p style="margin-top:0.5rem;"><em>Reach for it first when the answer must be reproducible from structured data.</em></p>
+            </div>
+            <div class="slide-card accent" style="height: 100%;">
+              <h3>AI</h3>
+              <p>Flexible. Handles unstructured text. Needs validation.</p>
+              <p style="margin-top:0.5rem;"><em>Reach for it when the input is language, or the task is pattern recognition.</em></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 1.5 — AI APPROPRIATENESS CONTINUUM -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; Choosing the right tools</p>
+          <h2>The AI appropriateness continuum.</h2>
+          <div class="ai-continuum">
+            <div class="ai-continuum-bar" aria-hidden="true">
+              <span class="ai-continuum-label stop-red">Process Critical</span>
+              <span class="ai-continuum-label stop-yellow">Human-in-the-Loop</span>
+              <span class="ai-continuum-label stop-green">Output-Driven</span>
+            </div>
+            <div class="ai-continuum-axis">
+              <span><strong>HOW</strong> it was done matters most</span>
+              <span><strong>WHAT</strong> was produced matters most</span>
+            </div>
+            <div class="slide-grid tight ai-continuum-cards">
+              <div class="slide-card tier-card tier-red">
+                <h3>Limited AI involvement</h3>
+                <p class="tier-rule">Use auditable, reproducible tools: scripts, queries, spreadsheets with visible logic.</p>
+                <ul>
+                  <li>Financial audits</li>
+                  <li>Effort certification &amp; sign-off</li>
+                  <li>Conflict-of-interest determinations</li>
+                  <li>IRB/IACUC protocol reviews</li>
+                  <li>Research misconduct investigations</li>
+                </ul>
+              </div>
+              <div class="slide-card tier-card tier-yellow">
+                <h3>AI can assist</h3>
+                <p class="tier-rule">AI does the prep. A qualified person reviews, validates, and signs off.</p>
+                <ul>
+                  <li>Pre-award budget review for allowability</li>
+                  <li>Compliance checks against sponsor terms</li>
+                  <li>Subaward risk assessments</li>
+                  <li>Cost transfer justification review</li>
+                  <li>Closeout checklist preparation</li>
+                </ul>
+              </div>
+              <div class="slide-card tier-card tier-green">
+                <h3>AI can lead</h3>
+                <p class="tier-rule">AI leads, but measure accuracy. Spot-check, track errors, add review back in if quality slips.</p>
+                <ul>
+                  <li>Drafting facilities/equipment descriptions</li>
+                  <li>Formatting budgets to sponsor templates</li>
+                  <li>Summarizing institutional policies</li>
+                  <li>Generating biosketches from CVs</li>
+                  <li>Routing form auto-population</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 1.5b — TWO QUESTIONS TO APPLY THE CONTINUUM -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; Applying the framework</p>
+          <h2>Two questions to pick the right tools.</h2>
+          <div class="two-questions">
+            <div class="two-questions-card">
+              <span class="two-questions-num">1</span>
+              <p class="two-questions-q">If someone asked how this task was completed, <strong>would the answer matter?</strong></p>
+            </div>
+            <div class="two-questions-card">
+              <span class="two-questions-num">2</span>
+              <p class="two-questions-q">Could a colleague <strong>re-run it and get the same result?</strong></p>
+            </div>
+          </div>
+          <p class="slide-note" style="margin-top:1.4rem; max-width:44rem; margin-left:auto; margin-right:auto;">
+            Two yeses point to <strong style="color:#c0392b;">process critical</strong> work, mixed answers to <strong style="color:#b8860b;">human-in-the-loop</strong>, and situations where a similar result is acceptable to <strong style="color:#2e7d5b;">output-driven</strong>.
+          </p>
+        </section>
+
+        <!-- MODULE 1.5c — OUTPUTS VALIDATED, WORKFLOWS APPROVED -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; Human-in-the-loop, done right</p>
+          <h2>Outputs are validated. Workflows are approved.</h2>
+          <p class="slide-lede assurance-lede-top">Workflows are approved <strong>by validating their outputs</strong>: the validation provides the evidence on which a person shoulders the responsibility to cover what the workflow produces.</p>
+          <div class="assurance-flow">
+            <div class="assurance-card">
+              <span class="assurance-tag">Step 1 &middot; per instance</span>
+              <h3>Validate outputs</h3>
+              <p class="assurance-lede">Spot-check outputs, sample them, and measure error rates to gather evidence that the workflow is behaving as expected.</p>
+              <ul>
+                <li>Is this specific output accurate?</li>
+                <li>Does it meet the requirement?</li>
+                <li>What is the error rate over time?</li>
+              </ul>
+            </div>
+            <div class="assurance-arrow" aria-hidden="true">&rarr;</div>
+            <div class="assurance-card">
+              <span class="assurance-tag">Step 2 &middot; a person signs off</span>
+              <h3>Approve the workflow</h3>
+              <p class="assurance-lede">Based on that evidence, a person shoulders responsibility for what the workflow produces.</p>
+              <ul>
+                <li>Who owns this workflow?</li>
+                <li>Where are the checkpoints and audit trail?</li>
+                <li>What triggers re-approval?</li>
+              </ul>
+            </div>
+          </div>
+          <blockquote class="assurance-quote">
+            <p>&ldquo;A computer can never be held accountable, therefore a computer must never make a management decision.&rdquo;</p>
+            <cite>IBM training manual, 1979</cite>
+          </blockquote>
+          <p class="assurance-payoff">This is why AI will not replace research administrators: the job is <strong>approval</strong>, approval requires <strong>accountability</strong>, and only a person can carry accountability.</p>
+        </section>
+
+        <!-- MODULE 1.6 — TASK SORTER (INTERACTIVE) -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; Your turn</p>
+          <h2>AI, or data science? You call it.</h2>
+          <p class="slide-note">Click a button to classify. Then reveal the answer.</p>
+          <div class="task-sorter" style="max-width:44rem; margin:0 auto;">
+            <div class="sort-item" data-answer="ai">
+              <span class="sort-text">Extracting deadlines from an unstructured RFA PDF.</span>
+              <div class="sort-btn-group">
+                <button class="sort-btn" data-zone="ai">AI</button>
+                <button class="sort-btn" data-zone="ds">Data Science</button>
+              </div>
+            </div>
+            <div class="sort-item" data-answer="ds">
+              <span class="sort-text">Calculating burn rate across 200 active awards.</span>
+              <div class="sort-btn-group">
+                <button class="sort-btn" data-zone="ai">AI</button>
+                <button class="sort-btn" data-zone="ds">Data Science</button>
+              </div>
+            </div>
+            <div class="sort-item" data-answer="ai">
+              <span class="sort-text">Comparing a proposal draft against sponsor solicitation requirements.</span>
+              <div class="sort-btn-group">
+                <button class="sort-btn" data-zone="ai">AI</button>
+                <button class="sort-btn" data-zone="ds">Data Science</button>
+              </div>
+            </div>
+            <div class="sort-item" data-answer="ds">
+              <span class="sort-text">Producing a monthly effort-report reconciliation.</span>
+              <div class="sort-btn-group">
+                <button class="sort-btn" data-zone="ai">AI</button>
+                <button class="sort-btn" data-zone="ds">Data Science</button>
+              </div>
+            </div>
+            <button class="sort-reveal">Reveal answers</button>
+          </div>
+        </section>
+
+        <!-- 16. MODULE 2 -->
+        <section>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/module-2-ethics.jpg" alt="Hands holding a balance scale" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">Module 2</p>
+              <h2>Ethical and responsible AI use.</h2>
+              <ul style="text-align:left;">
+                <li><strong>Four guiding questions.</strong> Vulnerability, harm, benefit, reversibility.</li>
+                <li><strong>Two methodologies.</strong> Argument by analogy. Reflective equilibrium.</li>
+                <li><strong>Three collective structures.</strong> Commons, prisoner's dilemma, stag hunt.</li>
+                <li><strong>Bias, privacy, disclosure.</strong> FERPA, HIPAA, GDPR. Sponsor guidance.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 2.2 — TRUST RATER (INTERACTIVE) -->
+        <section>
+          <p class="slide-kicker">Module 2 &middot; Your turn</p>
+          <h2>Green, yellow, or red?</h2>
+          <p class="slide-note">Click each button to cycle: green (fine), yellow (be careful), red (do not do this).</p>
+          <div style="max-width:44rem; margin:1rem auto; text-align:left;">
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.6rem 0; border-bottom:1px solid rgba(0,0,0,0.08);">
+              <button class="traffic-btn"></button>
+              <span>Using ChatGPT to summarize a public NSF FOA.</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.6rem 0; border-bottom:1px solid rgba(0,0,0,0.08);">
+              <button class="traffic-btn"></button>
+              <span>Pasting a draft PI biosketch containing a home address into a free chatbot.</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.6rem 0; border-bottom:1px solid rgba(0,0,0,0.08);">
+              <button class="traffic-btn"></button>
+              <span>Using an institutionally-approved AI to draft a boilerplate closeout email.</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.6rem 0; border-bottom:1px solid rgba(0,0,0,0.08);">
+              <button class="traffic-btn"></button>
+              <span>Uploading an export-controlled technical document to any public AI.</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.6rem 0;">
+              <button class="traffic-btn"></button>
+              <span>Letting AI make the final call on an effort certification.</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 17. MODULE 3 -->
+        <section>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/module-3-prompt.jpg" alt="Scrabble tiles spelling out words" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">Module 3</p>
+              <h2>Prompt engineering.</h2>
+              <ul style="text-align:left;">
+                <li><strong>Seven components.</strong> Role, context, instruction, input, format, constraints, examples.</li>
+                <li><strong>Context window = page limit.</strong> Instructions, information, and conversation compete for space.</li>
+                <li><strong>Three disciplines.</strong> Prompt, context, and conversation management.</li>
+                <li><strong>Try Promptulus.</strong> A live tool for iterative refinement.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 3.2 — AI LITERACY COMPANIONS (CHARACTER GRID) -->
+        <section>
+          <p class="slide-kicker">Module 3 &middot; A framework</p>
+          <h2>The AI Literacy Companions.</h2>
+          <div class="character-grid">
+            <div class="character-card" data-tip="Helps determine whether tasks require auditability or if a good answer is sufficient.">
+              <img src="img/promptulus/squirrel.png" alt="Sequita" />
+              <div class="char-name">Sequita</div>
+              <div class="char-role">Auditability</div>
+            </div>
+            <div class="character-card" data-tip="Breaks down complex prompts into manageable, modular workflows and task components.">
+              <img src="img/promptulus/crab.png" alt="Modulus" />
+              <div class="char-name">Modulus</div>
+              <div class="char-role">Decomposition</div>
+            </div>
+            <div class="character-card" data-tip="Clarifies purpose, accountability, and safety boundaries before using AI.">
+              <img src="img/promptulus/turtle.png" alt="Telosa" />
+              <div class="char-name">Telosa</div>
+              <div class="char-role">Intent</div>
+            </div>
+            <div class="character-card" data-tip="Identifies strengths and weaknesses in AI prompts and coaches better prompt design.">
+              <img src="img/promptulus/owl.png" alt="Promptulus" />
+              <div class="char-name">Promptulus</div>
+              <div class="char-role">Prompts</div>
+            </div>
+            <div class="character-card" data-tip="Helps select, organize, and format information for the AI context window.">
+              <img src="img/promptulus/elephant.png" alt="Mnemos" />
+              <div class="char-name">Mnemos</div>
+              <div class="char-role">Context</div>
+            </div>
+            <div class="character-card" data-tip="Keeps multi-turn AI interactions focused, productive, and free of distracting noise.">
+              <img src="img/promptulus/parrot.png" alt="Dialogos" />
+              <div class="char-name">Dialogos</div>
+              <div class="char-role">Conversation</div>
+            </div>
+            <div class="character-card" data-tip="Makes AI concepts and inner workings visible to non-technical audiences.">
+              <img src="img/promptulus/frog.png" alt="Vitrea" />
+              <div class="char-name">Vitrea</div>
+              <div class="char-role">Transparency</div>
+            </div>
+            <div class="character-card" data-tip="Helps assess whether AI output is accurate, reliable, and trustworthy.">
+              <img src="img/promptulus/raccoon.png" alt="Veridex" />
+              <div class="char-name">Veridex</div>
+              <div class="char-role">Evaluation</div>
+            </div>
+            <div class="character-card" data-tip="Helps record and communicate AI-assisted work so others can understand and reproduce it.">
+              <img src="img/promptulus/whale.png" alt="Clarion" />
+              <div class="char-name">Clarion</div>
+              <div class="char-role">Reporting</div>
+            </div>
+          </div>
+          <p class="slide-note" style="margin-top:0.8rem;">Hover any card. Full framework at nate-layman.github.io/promptulus.</p>
+        </section>
+
+        <!-- MODULE 3.3 — CONTEXT WINDOW SLIDER -->
+        <section>
+          <p class="slide-kicker">Module 3 &middot; The AI's page limit</p>
+          <h2>Four things compete for the context window.</h2>
+          <div class="context-slider" id="ctx-slider">
+            <div class="slider-bar">
+              <div class="slider-region" data-idx="0" style="width:10%; background:#5B8C3E;">
+                <span class="slider-pct">10%</span>
+                <span class="slider-label">Intent</span>
+              </div>
+              <div class="slider-handle" data-handle="0"></div>
+              <div class="slider-region" data-idx="1" style="width:50%; background:#C4960C;">
+                <span class="slider-pct">50%</span>
+                <span class="slider-label">Information</span>
+              </div>
+              <div class="slider-handle" data-handle="1"></div>
+              <div class="slider-region" data-idx="2" style="width:25%; background:#1B6B7A;">
+                <span class="slider-pct">25%</span>
+                <span class="slider-label">Instructions</span>
+              </div>
+              <div class="slider-handle" data-handle="2"></div>
+              <div class="slider-region" data-idx="3" style="width:15%; background:#2A9D8F;">
+                <span class="slider-pct">15%</span>
+                <span class="slider-label">Conversation</span>
+              </div>
+            </div>
+            <div class="slider-presets">
+              <button class="slider-preset active" data-preset="compliance">Compliance review</button>
+              <button class="slider-preset" data-preset="draft">Draft a description</button>
+              <button class="slider-preset" data-preset="iterative">Iterative editing</button>
+              <button class="slider-preset" data-preset="scoping">New task scoping</button>
+            </div>
+          </div>
+          <div class="slide-callout" style="margin-top:0.8rem;">
+            The window has a fixed size. Getting the balance right is the skill.
+          </div>
+        </section>
+
+        <!-- MODULE 3.4 — TOKEN BUILDER (SHOWSTOPPER) -->
+        <section>
+          <p class="slide-kicker">Module 3 &middot; How it actually works</p>
+          <h2>Pick the next word.</h2>
+          <p class="slide-note">Each choice shifts what comes next, exactly like an LLM.</p>
+          <div class="token-builder" id="token-builder"></div>
+          <p class="slide-note" style="margin-top:0.6rem;">No right answer, only probabilities. This is why LLMs produce different output each time.</p>
+        </section>
+
+        <!-- 18. MODULE 4 -->
+        <section>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/module-4-compliance.jpg" alt="A pyramid against blue sky" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">Module 4</p>
+              <h2>Compliance, risk, and governance.</h2>
+              <ul style="text-align:left;">
+                <li><strong>Compliance Pyramid.</strong> Most restrictive applicable guideline wins.</li>
+                <li><strong>Multi-level governance.</strong> Federal, sponsor, state, institution.</li>
+                <li><strong>Data classification drives tool choice.</strong> PII, PHI, FERPA, export-controlled.</li>
+                <li><strong>5W1H framework</strong> for institutional AI policy.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 4.2 — TOGGLE COMPARE: TOOL TIERS -->
+        <section>
+          <p class="slide-kicker">Module 4 &middot; Data classification drives tool choice</p>
+          <h2>Which tool for which data?</h2>
+          <div class="toggle-compare" style="max-width:44rem; margin:0 auto;">
+            <div class="toggle-header">
+              <button class="toggle-btn active" data-panel="public">Public AI</button>
+              <button class="toggle-btn" data-panel="private">Private AI</button>
+              <button class="toggle-btn" data-panel="ds">Data Science</button>
+            </div>
+            <div class="toggle-panel active" data-panel="public">
+              <p style="font-weight:600; margin:0 0 0.4rem;">ChatGPT free tier, Gemini free, Claude free.</p>
+              <ul>
+                <li>Fast, accessible, no procurement</li>
+                <li>Inputs may train the model</li>
+                <li>Not for PII, PHI, FERPA, or export-controlled data</li>
+              </ul>
+              <div class="slide-callout">Good for: public FOAs, summarizing published papers, drafting boilerplate.</div>
+            </div>
+            <div class="toggle-panel" data-panel="private">
+              <p style="font-weight:600; margin:0 0 0.4rem;">Institutional Copilot, private Claude/Gemini via enterprise agreement, Vandalizer.</p>
+              <ul>
+                <li>Inputs stay within your institution's data boundary</li>
+                <li>Approved for defined sensitivity levels (varies by contract)</li>
+                <li>Confirm your BAA / data-processing terms before use</li>
+              </ul>
+              <div class="slide-callout">Good for: internal proposal review, sponsor correspondence drafts, budget analysis.</div>
+            </div>
+            <div class="toggle-panel" data-panel="ds">
+              <p style="font-weight:600; margin:0 0 0.4rem;">SQL queries, structured spreadsheets, purpose-built scripts.</p>
+              <ul>
+                <li>Reproducible. Auditable. Deterministic.</li>
+                <li>Required when regulators need to see the computation</li>
+                <li>Rigid: needs clean structured data going in</li>
+              </ul>
+              <div class="slide-callout">Good for: financial audits, effort certification, compliance reporting.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 4.3 — CHALLENGE CHECKLIST -->
+        <section>
+          <p class="slide-kicker">Module 4 &middot; Before you paste</p>
+          <h2>Ask yourself these five questions.</h2>
+          <div class="challenge-checklist" role="list" style="max-width:42rem; margin:0 auto;">
+            <label class="challenge-item" role="listitem">
+              <input type="checkbox" class="challenge-box" />
+              <span>Is the data PII, PHI, FERPA-protected, or export-controlled?</span>
+            </label>
+            <label class="challenge-item" role="listitem">
+              <input type="checkbox" class="challenge-box" />
+              <span>Are there sponsor or IRB restrictions on how this data is shared?</span>
+            </label>
+            <label class="challenge-item" role="listitem">
+              <input type="checkbox" class="challenge-box" />
+              <span>Is the AI tool approved by my institution for this sensitivity level?</span>
+            </label>
+            <label class="challenge-item" role="listitem">
+              <input type="checkbox" class="challenge-box" />
+              <span>Does the platform retain or train on inputs?</span>
+            </label>
+            <label class="challenge-item" role="listitem">
+              <input type="checkbox" class="challenge-box" />
+              <span>Could the same task be done with anonymized or synthetic data?</span>
+            </label>
+          </div>
+          <p class="slide-note" style="margin-top:0.8rem;">Any "no" or "not sure" is a stop sign. Escalate to IT or compliance.</p>
+        </section>
+
+        <!-- 19. MODULE 5 -->
+        <section>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/slides/module-5-usecases.jpg" alt="A person writing at a desk with pen and paper" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">Module 5</p>
+              <h2>AI use cases.</h2>
+              <ul style="text-align:left;">
+                <li><strong>Pre-award.</strong> Budget justifications, RFA extraction, plain-language checks.</li>
+                <li><strong>Post-award.</strong> Award term extraction, checklist automation, progress reports.</li>
+                <li><strong>Financial and cost accounting.</strong> Allowability triage, F&amp;A classification, burn-rate.</li>
+                <li><strong>Contract review.</strong> Flow-down clauses, IP terms, publication restrictions.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 5.2 — FLIP CARDS: USE CASE PAIRS -->
+        <section>
+          <p class="slide-kicker">Module 5 &middot; What it looks like in your job</p>
+          <h2>Click a card. See the payoff.</h2>
+          <div class="flip-grid" style="max-width:52rem; margin:0 auto;">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"><h3>Extracting award terms</h3></div>
+                <div class="flip-card-back"><p>20 minutes of PDF triage per award becomes 90 seconds. High accuracy on dates, budgets, PI, F&amp;A.</p></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"><h3>Budget justification draft</h3></div>
+                <div class="flip-card-back"><p>AI drafts fringe / F&amp;A rationale from a budget spreadsheet. Human edits for institutional voice.</p></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"><h3>Plain-language check</h3></div>
+                <div class="flip-card-back"><p>Rewrites a technical paragraph for a non-specialist reviewer without losing content.</p></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"><h3>Contract flow-down</h3></div>
+                <div class="flip-card-back"><p>Reads prime terms, drafts the subaward clause set your office typically uses.</p></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"><h3>Sponsor solicitation check</h3></div>
+                <div class="flip-card-back"><p>Compares a proposal against solicitation requirements. Flags gaps before submission.</p></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"><h3>Progress report assist</h3></div>
+                <div class="flip-card-back"><p>Assembles boilerplate sections; investigator focuses on the science and outcomes.</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 21. LEARNING OBJECTIVES -->
         <section>
           <p class="slide-kicker">Session outcomes</p>
           <h2>Learning objectives.</h2>
-          <ol style="text-align:left; max-width:40rem; margin-left:auto; margin-right:auto;">
-            <li>Understand foundational AI concepts and terminology relevant to research administration.</li>
-            <li>Identify workflows in your day-to-day work where AI can add real leverage.</li>
-            <li>Choose an appropriate model or tool for a given task.</li>
-            <li>Design prompts that produce useful, on-target output.</li>
-            <li>Evaluate AI output critically and iterate to improve it.</li>
-            <li>Weigh ethical, transparency, and governance considerations when using AI at work.</li>
+          <ol style="text-align:left; max-width:44rem; margin-left:auto; margin-right:auto; font-size:1.15rem; line-height:1.4;">
+            <li>Explain foundational AI concepts and terminology relevant to research administration.</li>
+            <li>Identify tasks and workflows in research administration where AI and automation can add value.</li>
+            <li>Select appropriate AI models and break complex tasks into manageable components across different AI tools and platforms.</li>
+            <li>Design effective and accurate AI prompts for specific administrative tasks.</li>
+            <li>Evaluate AI outputs for accuracy, reliability, and appropriateness, and apply iterative refinement strategies broadly across AI systems.</li>
+            <li>Be prepared to discuss and address ethical, transparency, and governance considerations in AI-assisted workflows.</li>
           </ol>
         </section>
 
-        <!-- 13. CLOSE -->
-        <section class="title-slide" data-background-color="#f1b300">
-          <p class="slide-kicker slide-kicker-dark">Thank you</p>
+        <!-- 23. CLOSE -->
+        <section class="title-slide">
+          <p class="slide-kicker">Thank you</p>
           <h1>Questions?</h1>
-          <p class="slide-dark" style="margin-top:1rem; font-weight:700;">Nathan Layman &middot; AI4RA / University of Idaho</p>
-          <p class="slide-dark" style="margin-top:0.4rem; font-size:0.9rem;">Supported by NSF Grant No. 2427549</p>
+          <p style="margin-top:1rem; font-weight:700;">Nathan Layman &middot; AI4RA / University of Idaho</p>
+          <p style="margin-top:0.4rem; font-size:0.9rem;">Supported by NSF Grant No. 2427549</p>
         </section>
 
       </div>
@@ -120,5 +771,6 @@
         transition: "slide"
       });
     </script>
+    <script src="slides-interactive.js"></script>
   </body>
 </html>
