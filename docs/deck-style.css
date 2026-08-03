@@ -1437,6 +1437,13 @@ section.title-slide .title-presenter-affil {
   border-radius: 0.35rem;
 }
 
+.reveal .close-feedback-app-logo {
+  height: 5rem;
+  width: auto;
+  margin: 0.25rem 0;
+  object-fit: contain;
+}
+
 .reveal .close-feedback-label {
   margin: 0;
   font-size: 1rem;
@@ -1503,4 +1510,40 @@ section.title-slide .title-presenter-affil {
 
 .title-logo-xl {
   height: 9.5rem;
+}
+
+.reveal .title-grant-note {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--muted, #555);
+  text-align: center;
+}
+
+.close-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.reveal .close-logo {
+  height: 3.2rem;
+  width: auto;
+  margin: 0;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.reveal .close-logo-lg {
+  height: 3.8rem;
+}
+
+.reveal .close-logo-sm {
+  height: 1.9rem;
+}
+
+.reveal .close-logo-xl {
+  height: 4.8rem;
 }
