@@ -81,6 +81,47 @@
           </div>
         </section>
 
+        <!-- 10b. THE PORTABILITY TEST FOR AI LITERACY -->
+        <section>
+          <p class="slide-kicker">A working definition</p>
+          <h2>AI literacy is knowledge that makes you faster at learning any new AI tool.</h2>
+          <p class="slide-lede">Restated: literacy is knowledge that is <strong>portable</strong>. If it survives switching to a different platform, a newer model, or a different kind of AI, it is literacy. If it does not, it is usage training, and it ages quickly.</p>
+          <div class="slide-grid tight" style="align-items: stretch; max-width: 54rem; margin: 0.6rem auto 0;">
+            <div class="slide-card accent">
+              <h3>Across platforms</h3>
+              <p>What you know about Claude should transfer to ChatGPT, Gemini, and whatever comes next.</p>
+            </div>
+            <div class="slide-card accent">
+              <h3>Across time</h3>
+              <p>The specific tool changes every few months. The concepts behind it do not.</p>
+            </div>
+            <div class="slide-card accent">
+              <h3>Across modalities</h3>
+              <p>Text, image, audio, agents. Deeper literacy carries between them.</p>
+            </div>
+          </div>
+          <div class="slide-callout" style="max-width:46rem; margin:1rem auto 0;">
+            The practical test: <em>if I switched to a different AI tool tomorrow, would I still need this knowledge?</em> Yes means literacy. No means usage.
+          </div>
+        </section>
+
+        <!-- 10c. EIGHT KINDS OF KNOWLEDGE THAT MAKE YOU AI-LITERATE -->
+        <section>
+          <p class="slide-kicker">What falls inside</p>
+          <h2>Eight kinds of knowledge that make you AI-literate.</h2>
+          <ol class="literacy-categories" style="text-align:left; max-width:46rem; margin:0.6rem auto 0;">
+            <li><strong>Mechanism.</strong> How the tools produce their output. Tokens, probability, training data cutoffs.</li>
+            <li><strong>Boundary.</strong> What AI can and cannot do. Strong at consensus, weak at specialist material and anything recent.</li>
+            <li><strong>Evaluation.</strong> Reading output critically. Recognizing hallucination patterns before they propagate.</li>
+            <li><strong>Data.</strong> What happens to your prompts. Retention, training, and where a given kind of data is allowed to go.</li>
+            <li><strong>Assurance.</strong> Designing workflows that use AI responsibly. Validation, approval, audit trails.</li>
+            <li><strong>Ethical.</strong> Recognizing when AI raises an ethical question rather than a technical one.</li>
+            <li><strong>Communication.</strong> Explaining AI accurately, without overpromising, to a PI, an auditor, or an IT lead.</li>
+            <li><strong>Contextual.</strong> How AI intersects with the contracts, policies, and stakeholders in your institution.</li>
+          </ol>
+          <p class="slide-note" style="margin-top:0.8rem;">The rest of this session walks through these, in roughly this order.</p>
+        </section>
+
         <!-- 8b. LITERACY VS USAGE (the distinction) -->
         <section>
           <p class="slide-kicker">Before we go further</p>
@@ -611,6 +652,34 @@
           <p class="slide-note" style="margin-top:1rem; max-width:44rem; margin-left:auto; margin-right:auto;">Default posture: when in doubt, disclose upward and to anyone affected. Non-disclosure erodes trust faster than the AI use itself.</p>
         </section>
 
+        <!-- MODULE 2.1d-b — DOCUMENTATION: WHAT MAKES DISCLOSURE MEANINGFUL -->
+        <section>
+          <p class="slide-kicker">Module 2 &middot; Making disclosure verifiable</p>
+          <h2>Documenting AI use is the literacy skill that turns disclosure into an audit trail.</h2>
+          <p class="slide-lede">Saying &ldquo;I used AI&rdquo; is not enough. Say it in a way another person could reconstruct.</p>
+          <div class="slide-grid tight" style="align-items: stretch; max-width: 54rem; margin: 0.4rem auto 0;">
+            <div class="slide-card accent">
+              <h3>Time accessed</h3>
+              <p>Date and time. Models change frequently; yesterday&rsquo;s answer may not be today&rsquo;s.</p>
+            </div>
+            <div class="slide-card accent">
+              <h3>Model and version</h3>
+              <p>Claude Sonnet 4.6, GPT-4o, Gemini 2.5 Pro. Not just &ldquo;ChatGPT.&rdquo; The specific model is what makes the record useful.</p>
+            </div>
+            <div class="slide-card accent">
+              <h3>The prompt</h3>
+              <p>What you actually asked, verbatim. Paraphrasing loses the reasoning that produced the output.</p>
+            </div>
+            <div class="slide-card accent">
+              <h3>Context provided</h3>
+              <p>Files attached, prior turns, system instructions, or reference material you gave the model. The output depends on all of it.</p>
+            </div>
+          </div>
+          <div class="slide-callout" style="max-width:48rem; margin:1rem auto 0;">
+            Without these, &ldquo;the AI said so&rdquo; is unfalsifiable. With them, a colleague, an auditor, or a sponsor can rerun the query and see for themselves.
+          </div>
+        </section>
+
         <!-- MODULE 2.1e — TRAGEDY OF THE COMMONS (THE COMMON IS TRUST) -->
         <section>
           <div class="slide-split">
@@ -951,6 +1020,12 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front"><h3>Progress report assist</h3></div>
                 <div class="flip-card-back"><p>Assembles boilerplate sections; investigator focuses on the science and outcomes.</p></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"><h3>OCR on scanned files</h3></div>
+                <div class="flip-card-back"><p>Modern AI reads image-only PDFs and scans well, but this is a classic garbage-in, garbage-out setting. A crooked or low-resolution scan produces wrong dates, wrong dollar figures, and wrong names, all in the same confident tone. Always verify OCR output against the source.</p></div>
               </div>
             </div>
           </div>
