@@ -443,6 +443,23 @@
     });
   });
 
+  /* --- Expandable workflow steps (RA pipeline slide) --- */
+  document.querySelectorAll('.ra-workflow').forEach(function (workflow) {
+    workflow.querySelectorAll('.workflow-step').forEach(function (step) {
+      step.addEventListener('click', function () {
+        var wasOpen = step.classList.contains('is-open');
+        workflow.querySelectorAll('.workflow-step').forEach(function (s) {
+          s.classList.remove('is-open');
+          s.setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+          step.classList.add('is-open');
+          step.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  });
+
   /* --- AI Literacy verb flower (click a petal to expand + raise to top) --- */
   document.querySelectorAll('.verb-flower').forEach(function (flower) {
     var currentActive = null;
