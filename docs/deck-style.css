@@ -294,39 +294,42 @@ section.title-slide .slide-lede {
 }
 
 .ai-continuum-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   align-items: stretch;
+  gap: 0.7rem;
 }
 
 .tier-card {
   border-top: 6px solid transparent;
   background: #fff;
   text-align: left;
-  padding: 0.9rem 1rem;
+  padding: 0.7rem 0.85rem;
 }
 
 .tier-card h3 {
-  font-size: 1.05rem;
-  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  margin: 0 0 0.4rem;
+  line-height: 1.15;
 }
 
 .tier-card .tier-rule {
-  font-size: 0.85rem;
-  line-height: 1.4;
+  font-size: 0.75rem;
+  line-height: 1.35;
   color: var(--muted, #555);
-  margin: 0 0 0.55rem;
-  padding-bottom: 0.55rem;
+  margin: 0 0 0.45rem;
+  padding-bottom: 0.45rem;
   border-bottom: 1px dashed rgba(25, 25, 25, 0.15);
 }
 
 .tier-card ul {
   margin: 0;
-  padding-left: 1.1rem;
-  font-size: 0.82rem;
-  line-height: 1.45;
+  padding-left: 1rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
 }
 
 .tier-card ul li {
-  margin: 0.1rem 0;
+  margin: 0.08rem 0;
 }
 
 .tier-red {
@@ -674,6 +677,201 @@ section.title-slide .slide-lede {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* ---- Slido join block (QR + link, two-column, no callout) -------------- */
+.slido-join {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 2rem;
+  max-width: 46rem;
+  margin: 1.2rem auto 0;
+  text-align: left;
+}
+
+.slido-qr {
+  width: 12rem;
+  height: 12rem;
+  object-fit: contain;
+  border-radius: 0.35rem;
+  background: #fff;
+  padding: 0.35rem;
+}
+
+.slido-join-text {
+  min-width: 0;
+}
+
+.slido-join-label {
+  margin: 0 0 0.55rem;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--ink, #191919);
+}
+
+.slido-join-link {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink, #191919);
+  word-break: break-all;
+  text-decoration: underline;
+  text-decoration-color: var(--gold, #f1b300);
+  text-underline-offset: 3px;
+}
+
+/* ---- Five-step workflow image (Module 2) ------------------------------- */
+.workflow-image {
+  display: block;
+  max-width: 44rem;
+  width: 100%;
+  height: auto;
+  margin: 0.5rem auto 0;
+  border-radius: 0.5rem;
+}
+
+/* ---- UNESCO slide color-coded terms + legend --------------------------- */
+.unesco-term {
+  font-weight: 800;
+}
+
+.unesco-term-leverage {
+  color: #c98800;
+}
+
+.unesco-term-safety {
+  color: #1b6b7a;
+}
+
+.unesco-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted, #555);
+  letter-spacing: 0.02em;
+}
+
+.unesco-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.unesco-legend-swatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 0.2rem;
+}
+
+.swatch-leverage {
+  background: #c98800;
+}
+
+.swatch-safety {
+  background: #1b6b7a;
+}
+
+/* ---- AI literacy verb flower (Knowing vs Doing) ------------------------ */
+.verb-flower-wrap {
+  max-width: 32rem;
+  margin: 0.5rem auto 0;
+}
+
+.verb-flower {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.verb-petal {
+  cursor: pointer;
+  transition: transform 0.28s ease, filter 0.22s ease;
+  transform-origin: var(--cx, center) var(--cy, center);
+}
+
+.verb-petal:hover,
+.verb-petal:focus-visible {
+  filter: brightness(1.06);
+  outline: none;
+}
+
+.verb-petal.active {
+  transform: scale(1.6);
+  filter: brightness(1.08) drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+}
+
+.verb-petal.active circle {
+  fill-opacity: 0.95;
+}
+
+/* foreignObject content inside each petal */
+.petal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: #1a1a1a;
+  line-height: 1.15;
+}
+
+.petal-title {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.petal-def {
+  display: none;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 5px;
+  color: #111;
+}
+
+.verb-petal.active .petal-def {
+  display: block;
+}
+
+.petal-content-center {
+  color: #fff;
+}
+
+.petal-title-center {
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+.petal-def-center {
+  font-size: 8px;
+  line-height: 1.3;
+  color: #fff;
+  margin-top: 6px;
+}
+
+.verb-inline {
+  font-weight: 800;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+.verb-access      { color: #ff9a5c; }
+.verb-manage      { color: #c58cd8; }
+.verb-understand  { color: #6bceed; }
+.verb-integrate   { color: #a0d78a; }
+.verb-communicate { color: #f0c86b; }
+.verb-evaluate    { color: #7dc4b7; }
+.verb-create      { color: #ee9a90; }
+
 /* ---- MindRouter energy slide (Module 2) -------------------------------- */
 .energy-stats-grid {
   display: grid;
@@ -818,7 +1016,7 @@ section.title-slide .slide-lede {
   grid-template-columns: auto minmax(0, 1fr);
   gap: 1.5rem;
   align-items: center;
-  max-width: 60rem;
+  max-width: 72rem;
   margin: 0 auto 0.8rem;
 }
 

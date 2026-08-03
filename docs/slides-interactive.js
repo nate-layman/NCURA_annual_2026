@@ -442,4 +442,63 @@
       card.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   });
+
+  /* --- AI Literacy verb flower (click a petal to expand + raise to top) --- */
+  document.querySelectorAll('.verb-flower').forEach(function (flower) {
+    var currentActive = null;
+    var restoreAnchor = null;
+
+    function restore(petal) {
+      if (!petal || !restoreAnchor) return;
+      var parent = restoreAnchor.parent;
+      var anchor = restoreAnchor.nextSibling;
+      if (anchor && anchor.parentNode === parent) {
+        parent.insertBefore(petal, anchor);
+      } else if (parent) {
+        parent.appendChild(petal);
+      }
+    }
+
+    function deactivate() {
+      if (!currentActive) return;
+      currentActive.classList.remove('active');
+      restore(currentActive);
+      currentActive = null;
+      restoreAnchor = null;
+    }
+
+    flower.querySelectorAll('.verb-petal').forEach(function (petal) {
+      petal.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (currentActive === petal) {
+          deactivate();
+          return;
+        }
+        if (currentActive) {
+          currentActive.classList.remove('active');
+          restore(currentActive);
+        }
+        restoreAnchor = {
+          parent: petal.parentNode,
+          nextSibling: petal.nextSibling
+        };
+        petal.parentNode.appendChild(petal);
+        petal.classList.add('active');
+        currentActive = petal;
+      });
+    });
+
+    // Click on the flower background (not a petal) or outside the SVG entirely closes.
+    flower.addEventListener('click', function (e) {
+      if (e.target.closest('.verb-petal')) return;
+      deactivate();
+    });
+    var wrap = flower.closest('.verb-flower-wrap');
+    if (wrap) {
+      wrap.addEventListener('click', function (e) {
+        if (e.target.closest('.verb-petal')) return;
+        deactivate();
+      });
+    }
+  });
 })();
