@@ -44,6 +44,7 @@
             <p class="slido-join-label"><strong>Scan to join</strong></p>
             <img src="img/slido-qr.png" alt="QR code to join the Slido event" class="slido-qr" />
             <a href="https://bit.ly/4btkpYW" target="_blank" rel="noopener noreferrer" class="slido-join-link">bit.ly/4btkpYW</a>
+            <p class="slido-join-code">or join at slido.com with code <strong>#1676 419</strong></p>
           </div>
         </section>
 
@@ -314,6 +315,7 @@
             <p class="slido-join-label"><strong>Scan to join</strong></p>
             <img src="img/slido-qr.png" alt="QR code to join the Slido event" class="slido-qr" />
             <a href="https://bit.ly/4btkpYW" target="_blank" rel="noopener noreferrer" class="slido-join-link">bit.ly/4btkpYW</a>
+            <p class="slido-join-code">or join at slido.com with code <strong>#1676 419</strong></p>
           </div>
         </section>
 
@@ -409,6 +411,15 @@
             </button>
           </div>
           <div class="slide-callout" style="max-width:52rem; margin:1rem auto 0;">Knowing each step is the literacy skill that lets you diagnose where a workflow fails and where to add validation.</div>
+        </section>
+
+        <!-- MODULE 1.4c-token — TOKEN BUILDER (interactive next-token prediction) -->
+        <section>
+          <p class="slide-kicker">Module 1 &middot; How LLMs generate text</p>
+          <h2>What &ldquo;predict the next token&rdquo; actually feels like.</h2>
+          <p class="slide-note" style="margin:0 auto 0.4rem; max-width:52rem;">Click or drag a word to complete the sentence, and watch how each pick narrows what comes next and how likely your finished sentence really was.</p>
+          <div id="token-builder" class="token-builder"></div>
+          <div class="slide-callout" style="max-width:56rem; margin:0.9rem auto 0;">Fluent AI output is a chain of probabilistic picks, not a retrieved answer, so being AI-literate means treating every generated sentence as one branch among many the model could have taken.</div>
         </section>
 
         <!-- MODULE 1.4c-b — DECOMPOSITION AND MODEL SELECTION -->
@@ -560,6 +571,21 @@
           </div>
         </section>
 
+        <!-- 19a. PROMPTULUS — PROMPT SCAFFOLDING TOOL -->
+        <section>
+          <div class="slide-split">
+            <div class="split-img">
+              <img src="img/promptulus/owl.png" alt="Promptulus owl mascot" />
+            </div>
+            <div class="split-text">
+              <p class="slide-kicker">Module 3 &middot; A tool for the blank box</p>
+              <h2>Promptulus scaffolds the seven components so you can focus on the inputs.</h2>
+              <p>Rather than starting from a blank message box, Promptulus walks you through the pieces that make a prompt work: role, context, instruction, input data, output format, constraints, and examples. Fill the scaffold once, save it, and swap only the variable inputs for the next FOA, award, or closeout.</p>
+              <p class="slide-note">Try it at <a href="https://ai4ra.github.io/promptulus/" target="_blank" rel="noopener noreferrer">ai4ra.github.io/promptulus</a>.</p>
+            </div>
+          </div>
+        </section>
+
         <!-- 19b. EVALUATING AI OUTPUT (two dimensions) -->
         <section>
           <p class="slide-kicker">Module 1 &middot; Evaluating AI output</p>
@@ -570,7 +596,7 @@
             <div class="eval-card">
               <h3>Quantitative</h3>
               <p class="eval-scope">Structured outputs with a known correct answer.</p>
-              <p class="eval-examples">Accuracy, precision, recall, F1, exact match, BLEU, ROUGE, execution success.</p>
+              <p class="eval-examples">Accuracy, precision, recall, F1, exact match.</p>
             </div>
             <div class="eval-card">
               <h3>Qualitative</h3>
@@ -596,26 +622,22 @@
         <section>
           <p class="slide-kicker">Module 1 &middot; Ethical use</p>
           <h2>Ethics starts with recognizing when a decision is ethical, not technical.</h2>
-          <div class="slide-grid tight guiding-questions-grid" style="align-items: stretch; max-width:60rem; margin:0.5rem auto 0;">
-            <div class="slide-card accent guiding-question-card">
-              <span class="guiding-question-num">1</span>
+          <div class="eval-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr)); max-width:60rem; margin:0.5rem auto 0;">
+            <div class="eval-card">
               <h3>Who is made vulnerable?</h3>
-              <p>Downstream: PIs, sponsors, subjects. Upstream: vendors, IT, whoever fed the training data.</p>
+              <p class="eval-scope">Downstream: PIs, sponsors, subjects. Upstream: vendors, IT, whoever fed the training data.</p>
             </div>
-            <div class="slide-card accent guiding-question-card">
-              <span class="guiding-question-num">2</span>
+            <div class="eval-card">
               <h3>How can potential harm be minimized?</h3>
-              <p>Prioritize the well-being of those affected. Benefits to many do not automatically cancel harms to a few.</p>
+              <p class="eval-scope">Prioritize the well-being of those affected. Benefits to many do not automatically cancel harms to a few.</p>
             </div>
-            <div class="slide-card accent guiding-question-card">
-              <span class="guiding-question-num">3</span>
+            <div class="eval-card">
               <h3>Who benefits, and how is it distributed?</h3>
-              <p>Real benefits, honestly counted. Ask who is excluded from the benefit and whether that exclusion is systematic.</p>
+              <p class="eval-scope">Real benefits, honestly counted. Ask who is excluded from the benefit and whether that exclusion is systematic.</p>
             </div>
-            <div class="slide-card accent guiding-question-card">
-              <span class="guiding-question-num">4</span>
+            <div class="eval-card">
               <h3>Can the adoption be reversed?</h3>
-              <p>Under moral uncertainty, favor reversible choices. Optionality is part of the value.</p>
+              <p class="eval-scope">Under moral uncertainty, favor reversible choices. Optionality is part of the value.</p>
             </div>
           </div>
           <div class="slide-callout" style="max-width:56rem; margin:0.9rem auto 0;">Transparency and governance flow from these four questions: disclose AI use where the answers matter, document what you did so others can review it, and design workflows so a person can be held accountable.</div>
@@ -629,10 +651,21 @@
             <li>Explain foundational AI concepts and terminology relevant to research administration.</li>
             <li>Identify tasks and workflows in research administration where AI and automation can add value.</li>
             <li>Select appropriate AI models and break complex tasks into manageable components across different AI tools and platforms.</li>
-            <li>Design effective and accurate AI prompts for specific administrative tasks. <span style="font-weight:400; color:var(--muted, #555); font-size:0.9em;">See <a href="https://nate-layman.github.io/promptulus" target="_blank" rel="noopener noreferrer">nate-layman.github.io/promptulus</a>.</span></li>
+            <li>Design effective and accurate AI prompts for specific administrative tasks.</li>
             <li>Evaluate AI outputs for accuracy, reliability, and appropriateness, and apply iterative refinement strategies broadly across AI systems.</li>
             <li>Be prepared to discuss and address ethical, transparency, and governance considerations in AI-assisted workflows.</li>
           </ol>
+        </section>
+
+        <!-- 22b. SLIDO FEEDBACK -->
+        <section>
+          <h2>Interactive quiz</h2>
+          <div class="slido-join">
+            <p class="slido-join-label"><strong>Scan to answer</strong></p>
+            <img src="img/slido-qr.png" alt="QR code to join the Slido event" class="slido-qr" />
+            <a href="https://bit.ly/4btkpYW" target="_blank" rel="noopener noreferrer" class="slido-join-link">bit.ly/4btkpYW</a>
+            <p class="slido-join-code">or join at slido.com with code <strong>#1676 419</strong></p>
+          </div>
         </section>
 
         <!-- 23. CLOSE -->
@@ -641,14 +674,15 @@
           <h1>Questions?</h1>
           <div class="close-feedback">
             <div class="close-feedback-item">
-              <img src="img/evaluator-qr.png" alt="QR code to the external session evaluator" class="close-feedback-qr" />
-              <p class="close-feedback-label"><strong>Session evaluator</strong></p>
-              <p class="close-feedback-note">Scan to give feedback on this session.</p>
+              <p class="close-feedback-label"><strong>NSF External Evaluation</strong></p>
+              <a href="https://bit.ly/3NwQpTi" target="_blank" rel="noopener noreferrer">
+                <img src="img/evaluation_survey.png" alt="QR code to the NSF external evaluation survey" class="close-feedback-qr" />
+              </a>
+              <a href="https://bit.ly/3NwQpTi" target="_blank" rel="noopener noreferrer" class="close-feedback-link">bit.ly/3NwQpTi</a>
             </div>
-            <div class="close-feedback-item">
-              <p class="close-feedback-icon" aria-hidden="true">&#128241;</p>
-              <p class="close-feedback-label"><strong>NCURA app</strong></p>
-              <p class="close-feedback-note">Also leave a rating in the NCURA Annual app.</p>
+            <div class="close-feedback-item close-feedback-item-text">
+              <p class="close-feedback-label"><strong>NCURA Annual App</strong></p>
+              <p class="close-feedback-note">Please leave a session rating.</p>
             </div>
           </div>
           <p style="margin-top:1rem; font-weight:700;">Nathan C. Layman &middot; AI4RA / University of Idaho</p>

@@ -223,7 +223,7 @@
         '<div class="tb-gd-modal">' +
         '<button class="tb-gd-close">&times;</button>' +
         '<div class="tb-gd-kicker">Sidebar</div>' +
-        '<img src="img/diagrams/gradient_descent.png" class="tb-gd-img" alt="Gradient descent visualization">' +
+        '<img src="img/gradient_descent.png" class="tb-gd-img" alt="Gradient descent visualization">' +
         '<p class="tb-gd-title">How does it learn?</p>' +
         '<p class="tb-gd-text">' +
         'The model measures how wrong each prediction was, ' +
@@ -505,7 +505,8 @@
       });
     });
 
-    // Click on the flower background (not a petal) or outside the SVG entirely closes.
+    // Click on the flower background, the wrap, or anywhere on the slide
+    // outside a petal closes any active petal.
     flower.addEventListener('click', function (e) {
       if (e.target.closest('.verb-petal')) return;
       deactivate();
@@ -513,6 +514,13 @@
     var wrap = flower.closest('.verb-flower-wrap');
     if (wrap) {
       wrap.addEventListener('click', function (e) {
+        if (e.target.closest('.verb-petal')) return;
+        deactivate();
+      });
+    }
+    var section = flower.closest('section');
+    if (section) {
+      section.addEventListener('click', function (e) {
         if (e.target.closest('.verb-petal')) return;
         deactivate();
       });
