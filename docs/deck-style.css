@@ -1390,7 +1390,7 @@ section.title-slide .slide-lede {
 section.title-slide .title-presenter {
   margin: 1.4rem 0 0.3rem;
   font-size: 4rem !important;
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.02;
   color: var(--ink, #191919);
@@ -1435,6 +1435,16 @@ section.title-slide .title-presenter-affil {
   object-fit: contain;
   background: #fff;
   border-radius: 0.35rem;
+  display: block;
+}
+
+.close-feedback-item > a {
+  display: block;
+  line-height: 0;
+}
+
+.reveal .close-feedback-item > a.close-feedback-link {
+  line-height: 1.2;
 }
 
 .reveal .close-feedback-app-logo {
@@ -1519,6 +1529,21 @@ section.title-slide .title-presenter-affil {
   text-align: center;
 }
 
+.reveal .title-followalong {
+  margin: 1rem auto 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink, #191919);
+  text-align: center;
+}
+
+.reveal .title-followalong a {
+  color: var(--ink, #191919);
+  text-decoration: underline;
+  text-decoration-color: var(--gold, #f1b300);
+  text-underline-offset: 4px;
+}
+
 .close-logo-row {
   display: flex;
   align-items: center;
@@ -1546,4 +1571,11 @@ section.title-slide .title-presenter-affil {
 
 .reveal .close-logo-xl {
   height: 4.8rem;
+}
+
+.reveal .close-grant-note {
+  margin: 0.6rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted, #555);
+  text-align: center;
 }
